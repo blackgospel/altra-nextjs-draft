@@ -5,6 +5,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   name,
   role,
   testimonial,
+  company,
 }) => {
   return (
     <div className={styles.container}>
@@ -16,8 +17,9 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         </div>
         <div className={styles.testimonial}>{testimonial}</div>
         <div className={styles.clients}>
-          <p className={styles[`client-name`]}>{name}</p>
-          <p className={styles[`client-role`]}>{role}</p>
+          {name && <p className={styles[`client-name`]}>{name}</p>}
+          {role && <p className={styles[`client-role`]}>{role}</p>}
+          {company && <p className={styles[`client-company`]}>{company}</p>}
         </div>
       </div>
     </div>

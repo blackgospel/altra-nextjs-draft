@@ -30,10 +30,10 @@ const Testimonials: React.FC = () => {
             },
           }}
         >
-          {TestimonialsData.map(({ name, role, testimonial }) => {
+          {TestimonialsData.map(({ name, role, testimonial, company }) => {
             return (
               <SwiperSlide key={name}>
-                <TestimonialCard {...{ name, role, testimonial }} />
+                <TestimonialCard {...{ name, role, testimonial, company }} />
               </SwiperSlide>
             )
           })}
