@@ -358,6 +358,18 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.0.tgz#7f698254aadf921e48dda8c0a6b304026b8a9323"
   integrity sha512-JLo+Y592QzIE+q7Dl2pMUtt4q8SKYI5jDrZxrozEQxnGVOyYE+GWK9eLkwTaeN9DDctlaRAQ3TBmzZ1qdLE30A==
 
+"@tabler/icons@^1.47.0":
+  version "1.47.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-1.47.0.tgz#4aafca0d2c4ed5c0e240bb522a629b822bf14f52"
+  integrity sha512-mCd4CFbxFti/hTvi1dKvlO3o8yOltQw7Zbzl0I3lZWjC1ChJGq7DZ5AFENopa5sGuGY77Kk4A4eIURkxegP/6Q==
+
+"@types/classnames@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-2.3.1.tgz#3c2467aa0f1a93f1f021e3b9bcf938bd5dfdc0dd"
+  integrity sha512-zeOWb0JGBoVmlQoznvqXbE0tEC/HONsnoUNH19Hc96NFsTAwTXbTqb8FMYkru1F/iqp7a18Ws3nWJvtA1sHD1A==
+  dependencies:
+    classnames "*"
+
 "@types/hoist-non-react-statics@*":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
@@ -874,6 +886,11 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+classnames@*, classnames@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 classnames@2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
@@ -1120,6 +1137,13 @@ doctrine@^3.0.0:
   integrity sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
   dependencies:
     esutils "^2.0.2"
+
+dom7@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.1.tgz#821209df1bfdf97dd82b5156e50f7cb66b3f166c"
+  integrity sha512-y/RWjw3gK3qQnZz6IqDaIoqH6+xBhcB3Wsh5HFwl0abwuO/NAgbSB31ZbxtBDcuDe8jAX5NYUNDLTx4Ul48sIw==
+  dependencies:
+    ssr-window "^4.0.0"
 
 domain-browser@4.19.0:
   version "4.19.0"
@@ -2896,6 +2920,11 @@ source-map@^0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
+ssr-window@^4.0.0, ssr-window@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.1.tgz#514bf2ca81952f63fe88e8b0c623a23f90f7feb3"
+  integrity sha512-5q936lkCk5Lg5hM6tG8Nutdym4vNiuFSWorslTzOn71PWb3Wnx44q/k2Ryn1LWA1G4FtxMzjywUFOiOxPkVGrA==
+
 stacktrace-parser@0.1.10:
   version "0.1.10"
   resolved "https://registry.yarnpkg.com/stacktrace-parser/-/stacktrace-parser-0.1.10.tgz#29fb0cae4e0d0b85155879402857a1639eb6051a"
@@ -3060,6 +3089,14 @@ supports-color@^8.0.0:
   integrity sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==
   dependencies:
     has-flag "^4.0.0"
+
+swiper@^7.3.1:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-7.3.1.tgz#697734231d43c67c0e03134c969ebbd5e5037b54"
+  integrity sha512-YHa8uI22UwF9Q6F9tCDSai7/BJo8uVHKampKYAIShlFrWoHfM+sCCn24Yeq3oqIKZv2bfSULzXKsXmh0VpCNeQ==
+  dependencies:
+    dom7 "^4.0.1"
+    ssr-window "^4.0.1"
 
 text-table@^0.2.0:
   version "0.2.0"

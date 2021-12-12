@@ -1,5 +1,5 @@
 import Header from '../header/index.header'
-import styles from './page.module.sass'
+import styles from './index.module.sass'
 
 const Page: React.FC = ({ children }) => {
   return (

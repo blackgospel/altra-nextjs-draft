@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Brent Lassi",
+    "role": "Chief Information Security Officer",
+    "testimonial": "The team at Tines is simply amazing. The tech is easy to follow, easy to work with, and infinitely flexible. The solution opportunities created by Tines are endless."
+  },
+  {
+    "name": "Joel Perez-Sanchez",
+    "role": " Security Engineer",
+    "testimonial": "The thing we like about Tines is the flexibility of the product. We can hook it up to any of our tools. Rather than having to buy a specific tool that works with Tines, it works with whatever we already have. If it has an API, Tines can integrate with it."
+  },
+  {
+    "name": "Brandon Maxwell",
+    "role": "Senior Security Engineer",
+    "testimonial": "Other platforms have a lot of unnecessary complexity, but Tines is flexible, lightweight, and easy to use."
+  },
+  {
+    "name": "Tristan Waldear",
+    "role": "Security Automation Manager",
+    "testimonial": "Tines has enabled a level of customization and utility that wasn’t previously available to Box’s security analysts. Now, incident response analysts can customize the workflow to suit their needs. And they can add extra features to suit their own playbook without having to request any software updates."
+  },
+  {
+    "name": "John McSweeney",
+    "role": "Director of Active Defence",
+    "testimonial": "Our success is built on automation, and that success is built on Tines."
+  },
+  {
+    "name": "Tom Sage",
+    "role": "Security Engineer",
+    "testimonial": "Thanks to Tines, the first time an analyst looks at the case, they already have all the information they need to decide what action to take. This workflow saves around 50% of an analyst’s time working on each case. But it’s not just about time – we also eliminate the human error that can creep into manual processes."
+  }
+]
