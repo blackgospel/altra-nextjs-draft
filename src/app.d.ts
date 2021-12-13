@@ -1,6 +1,6 @@
 interface TestimonialCardProps {
-  name: string
-  role: string
+  name?: string
+  role?: string
   testimonial: string
-  company: string
+  company?: string
 }
