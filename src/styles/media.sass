@@ -1,0 +1,27 @@
+/* breakpoints */
+$xs-breakpoint: 380px
+$sm-breakpoint: 600px
+$md-breakpoint: 900px
+$lg-breakpoint: 1200px
+$xl-breakpoint: 1536px  
+  
+@mixin media($size) 
+  @if $size == xs 
+    @media (min-width: $xs-breakpoint)
+      @content 
+  @else if $size == sm 
+    @media (min-width: $sm-breakpoint)  
+      @content 
+  @else if $size == md 
+    @media (min-width: $md-breakpoint)  
+      @content 
+  @else if $size == lg 
+    @media (min-width: $lg-breakpoint)  
+      @content 
+  @else if $size == xl
+    @media (min-width: $xl-breakpoint)  
+      @content 
+  
+@mixin hover
+  @media (hover: hover)
+    @content
