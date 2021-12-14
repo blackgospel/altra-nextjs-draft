@@ -24,4 +24,9 @@ $xl-breakpoint: 1536px
   
 @mixin hover
   @media (hover: hover)
+    &:hover
+      @content
+
+@mixin lastChild
+  &:last-child
     @content
