@@ -16,18 +16,21 @@
     "company": "Newtownpark House"
   },
   {
-    "name": "Tristan Waldear",
-    "role": "Security Automation Manager",
-    "testimonial": "Tines has enabled a level of customization and utility that wasn't previously available to Box's security analysts. Now, incident response analysts can customize the workflow to suit their needs. And they can add extra features to suit their own playbook."
+    "name": "Orla O`Sullivan",
+    "role": "Director of Nursing",
+    "testimonial": "Altra has made such a difference when interacting with residents. For example, a resident whose conversation used to focus on pain no longer mentions it when viewing family photos and comments on the Family Newsletter. Altra has had such a positive impact on the Home.",
+    "company": "St Luke`s Home"
   },
   {
-    "name": "John McSweeney",
-    "role": "Director of Active Defence",
-    "testimonial": "Our success is built on automation, and that success is built on Tines."
+    "name": "Kiera Garrigan",
+    "role": "Administration",
+    "testimonial": "It`s great! Families get to see what the residents are up to and the activities they are involved with.",
+    "company": "Kilbrew Nursing Home"
   },
   {
-    "name": "Tom Sage",
-    "role": "Security Engineer",
-    "testimonial": "Thanks to Tines, the first time an analyst looks at the case, they already have all the information they need to decide what action to take. This workflow saves around 50% of an analyst's time working on each case."
+    "name": "Jaison John",
+    "role": "Director of Nursing",
+    "testimonial": "It is simple to use for both staff and families. It’s a great tool to keep residents connected with their families, sharing photos of good memories in their life.",
+    "company": "SignaCare"
   }
 ]

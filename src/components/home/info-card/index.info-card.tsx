@@ -3,20 +3,20 @@ import Spacing from 'components/atomic/spacing/atomic.spacing'
 import Section from 'components/global/section/index.section'
 import styles from './index.module.sass'
 
-const InfoCard: React.FC = () => {
+const InfoCard: React.FC<HomeInfoCardProps> = ({
+  title,
+  description,
+  color,
+}) => {
   return (
     <Section>
-      <div className={styles.container}>
+      <div className={styles.container} style={{ backgroundColor: color }}>
         <div className={styles.wrapper}>
-          <h1 className={styles.headline}>For the whole team </h1>
+          <h1 className={styles.headline}>{title}</h1>
 
           <Spacing />
 
-          <p className={styles.subtitle}>
-            Automation works when it`s built by those who know the workflow best
-            - not distant developers. Tines is no-code, giving your frontline
-            team members automation superpowers.
-          </p>
+          <p className={styles.subtitle}>{description}</p>
 
           <Spacing />
 

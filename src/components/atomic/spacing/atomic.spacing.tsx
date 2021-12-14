@@ -3,9 +3,7 @@ import styles from './index.module.sass'
 
 const Spacing: React.FC<SpacingProps> = ({ children, space = 'md' }) => {
   return (
-    <span className={cn({ [styles[`${space}-spacing`]]: true })}>
-      {children}
-    </span>
+    <div className={cn({ [styles[`${space}-spacing`]]: true })}>{children}</div>
   )
 }
 

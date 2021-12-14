@@ -2,31 +2,65 @@
 @import "styles/variables"
 
 .container
-  background-color: lightblue
-  padding: $md-padding
+  background-color: #32313b
+  padding: $xxl-padding
+  border-radius: $primary-border-radius
+  margin: $section-mobile-footer-margin
 
   @include media(md)
-    border-radius: $primary-border-radius
-    margin: $section-hero-margin
-    min-height: 100vh
+    margin: $section-footer-margin
 
-.headline-wrapper
-  display: grid
-  grid-auto-columns: minmax(0, 1fr)
-  grid-auto-flow: column
-  padding: $xxxl-padding 0
 
-.headline-content
-  padding: $sm-padding
-  text-align: center
+.footer-wrapper
   margin: 0 auto
+  max-width: 1100px
 
+  .logo
+    
+    img
+      max-width: 100%
+
+  .navbar-wrapper
+
+    .navbar-list
+
+      .navbar-item
+        margin-bottom: $md-padding
+        font-size: 20px
+        
+        @include lastChild
+          margin-bottom: 0
+        
+        a
+          color: $secondary-color
+
+
+.schedule-demo-wrapper
+
+  .content
+    color: $white
+
+  .button-wrapper
+
+
+.copyright-wrapper
+  margin: 0 auto
+  max-width: 1100px
+  
   @include media(sm)
-    min-width: 400px
-    max-width: 640px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
 
-.headline
-  color: $white
+  .copyright
+    color: $white
+    margin-bottom: $md-padding
 
-.mission
-  color: $white
+    @include media(sm)
+      margin-bottom: 0
+
+  .linked-in-text
+    display: inline-flex
+    align-items: center
+    color: $white
