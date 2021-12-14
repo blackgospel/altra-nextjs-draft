@@ -1,8 +1,19 @@
 @import "styles/variables"
+@import "styles/media"
   
 .container
   color: $white
   background: $primary-color
+  border-radius: $primary-border-radius
+  text-align: center
+
+.wrapper
+  width: 80%
+  margin: 0 auto
+  padding: $xxxl-padding $lg-padding
+
+  @include media(sm)
+    padding: $xxxl-padding
 
 .title
   
