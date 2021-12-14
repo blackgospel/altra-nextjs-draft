@@ -1,36 +1,29 @@
 import { IconMenu } from '@tabler/icons'
-import Link from 'next/link'
+import useNavbar from './hooks/useNavbar'
 import styles from './index.module.sass'
+import Nav from './nav/index.nav'
 
 const Navbar: React.FC = () => {
+  const { active, handleToggleActive } = useNavbar()
+
   return (
     <nav className={styles.container}>
-      <div className={styles[`logo-wrapper`]}>Logo</div>
-      <div className={styles[`mobile-navbar-wrapper`]}>
-        <div className={styles[`menu-icon`]}>
-          <IconMenu />
+      <div className={styles.wrapper}>
+        <div className={styles[`nav-wrapper`]}>
+          <div className={styles[`logo-wrapper`]}>Logo</div>
+          <div className={styles[`mobile-content`]}>
+            <div className={styles[`menu-icon`]}>
+              <IconMenu onClick={handleToggleActive} />
+            </div>
+          </div>
+          <div className={styles[`desktop-content`]}>
+            <Nav />
+          </div>
         </div>
-      </div>
-      <div className={styles[`desktop-navbar-wrapper`]}>
-        <nav className={styles[`navbar-wrapper`]}>
-          <ul className={styles[`navbar-list`]}>
-            <li className={styles[`navbar-item`]}>
-              <Link href="/">Home</Link>
-            </li>
-            <li className={styles[`navbar-item`]}>
-              <Link href="/">Products</Link>
-            </li>
-            <li className={styles[`navbar-item`]}>
-              <Link href="/">Customers</Link>
-            </li>
-            <li className={styles[`navbar-item`]}>
-              <button className={styles[`navbar-button`]}>Book Demo</button>
-            </li>
-            <li className={styles[`navbar-item`]}>
-              <button className={styles[`navbar-button`]}>Login</button>
-            </li>
-          </ul>
-        </nav>
+
+        <div className={styles[`mobile-navbar-wrapper`]}>
+          {active && <Nav />}
+        </div>
       </div>
     </nav>
   )

@@ -1,21 +1,35 @@
 @import "styles/media"
 @import "styles/variables"
+@import "styles/flex"
 
 .container
   background-color: lightblue
   padding: $md-padding
+  position: relative
+  height: 65vh
+
+  @include media(xs)
+    height: 55vh
+
+  @include media(sm)
+    height: 45vh
 
   @include media(md)
     border-radius: $primary-border-radius
     margin: $section-hero-margin
+    height: auto
 
 .headline-wrapper
-  display: grid
-  grid-auto-columns: minmax(0, 1fr)
-  grid-auto-flow: column
-  padding: $xxxl-padding 0
+  height: 100%
+
+  @include media(md)
+    margin-top: $navbar-height
+    padding: $xxxl-padding 0
 
 .headline-content
+  @include flexColumn
+  @include flexCenter
+  height: 100%
   padding: $sm-padding
   text-align: center
   margin: 0 auto

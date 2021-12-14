@@ -7,13 +7,11 @@ const Header: React.FC = () => {
     <header className={styles.container}>
       <Navbar />
 
-      <Spacing />
-
       <div className={styles[`headline-wrapper`]}>
         <article className={styles[`headline-content`]}>
           <h1 className={styles.headline}>Improve resident wellbeing </h1>
 
-          <Spacing space="lg" />
+          <Spacing space="md" />
 
           <p className={styles.mission}>
             Altra`s easy to use platform helps you deliver on your promise of

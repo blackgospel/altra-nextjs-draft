@@ -1,4 +1,3 @@
-import Footer from 'components/global/footer/index.footer'
 import Page from 'components/global/page/index.page'
 import Customer from 'components/home/customer/home.customer'
 import InfoCard from 'components/home/info-card/index.info-card'
@@ -12,7 +11,7 @@ const Home = () => {
       <InfoCard />
       <InfoCard />
       <Testimonials />
-      <Footer />
+      {/* <Footer /> */}
     </Page>
   )
 }

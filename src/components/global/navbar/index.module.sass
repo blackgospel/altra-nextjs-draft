@@ -3,22 +3,41 @@
 @import "styles/variables"
 
 .container
+  background-color: $default-surface-color
+  border-radius: $primary-border-radius
+  width: 100%
+  max-width: 95%
+  margin: 0 auto
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 9
+
+  @include media(sm)
+    max-width: min(640px, 90%)
+  
+  @include media(md)
+    max-width: min(760px, 90%)
+
+  @include media(lg)
+    max-width: $navbar-width
+
+.wrapper
+  position: relative
+  padding: $md-padding $lg-padding
+
+.nav-wrapper
   display: flex
   align-items: center
   justify-content: space-between
-  background-color: $default-surface-color
-  padding: $md-padding $lg-padding
-  border-radius: $primary-border-radius
-  height: $navbar-height
-  max-width: $navbar-width
-  margin: 0 auto
 
 .logo-wrapper
   
   img
     max-width: 100%
 
-.mobile-navbar-wrapper
+.mobile-content
+  display: block
 
   @include media(md)
     display: none
@@ -27,7 +46,27 @@
     width: 16px
     height: 16px
 
-.desktop-navbar-wrapper
+.mobile-navbar-wrapper 
+
+  @include media(md)
+    display: none
+
+  .navbar-wrapper
+    margin-top: $md-padding
+
+    .navbar-list
+      @include flexColumn
+
+      .navbar-item
+        border-top: 1px solid rgba(50,49,59,.1) 
+        padding: $md-padding 0
+
+        @include firstChild
+          border-top: 0
+
+
+.desktop-content
+  display: none
 
   @include media(md)
     display: block
@@ -39,27 +78,34 @@
       align-items: center
 
       .navbar-item
-        letter-spacing: 1.2
         margin-right: $lg-padding
-
-        a
-          color: $black
-          transition: $transition-duration $transition-ease
-
-          @include hover
-            color: $primary-color
 
         @include lastChild
           margin-right: 0
 
-      .navbar-button
-        font-weight: 500
-        padding: $sm-padding $md-padding
-        background-color: $secondary-color
-        color: $white
-        border-radius: $secondary-border-radius
-        transition: $transition-duration $transition-ease
+.navbar-item
+  letter-spacing: 0.8px
 
-        @include hover
-          background-color: darken($secondary-color, 20%)
-      
+  a
+    color: $black
+    transition: $transition-duration $transition-ease
+
+    @include hover
+      color: $primary-color
+
+.navbar-button
+  font-weight: 500
+  padding: $sm-padding $md-padding
+  background-color: $secondary-color
+  color: $white
+  border-radius: $secondary-border-radius
+  transition: $transition-duration $transition-ease
+  letter-spacing: 0.8px
+  width: 100%
+
+  @include media(md)
+    width: auto
+
+  @include hover
+    background-color: darken($secondary-color, 20%)
+  

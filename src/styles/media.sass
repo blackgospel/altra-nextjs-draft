@@ -1,5 +1,5 @@
 /* breakpoints */
-$xs-breakpoint: 380px
+$xs-breakpoint: 370px
 $sm-breakpoint: 600px
 $md-breakpoint: 900px
 $lg-breakpoint: 1200px
@@ -29,4 +29,8 @@ $xl-breakpoint: 1536px
 
 @mixin lastChild
   &:last-child
+    @content
+
+@mixin firstChild
+  &:first-child
     @content

@@ -1,10 +1,14 @@
 @import 'styles/variables'
+@import 'styles/media'
   
 .container
   position: relative
   overflow: hidden
-  padding: 64px 16px
+  padding: $xxl-padding $md-padding
   background-color: #fff
+
+  @include media(md)
+    padding: $xxxl-padding $md-padding
 
   &:global(.section-alt) 
     background-color: #fcf9f5
