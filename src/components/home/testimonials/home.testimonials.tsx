@@ -1,5 +1,9 @@
+import { IconArrowLeft, IconArrowRight } from '@tabler/icons'
+import Button from 'components/atomic/button/atomic.button'
+import Spacing from 'components/atomic/spacing/atomic.spacing'
 import Section from 'components/global/section/index.section'
 import TestimonialsData from 'data/testimonial.json'
+import useSwiper from 'src/hooks/useSwiper'
 import SwiperCore, { Mousewheel, Pagination } from 'swiper'
 import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -9,9 +13,29 @@ import styles from './index.module.sass'
 SwiperCore.use([Mousewheel, Pagination])
 
 const Testimonials: React.FC = () => {
+  const { handleSetSwiper, handleNextSwipe, handlePrevSwipe } = useSwiper()
+
   return (
-    <Section altColor>
+    <Section>
       <div className={styles.container}>
+        <div className={styles.controls}>
+          <button
+            className={styles[`controls-button`]}
+            onClick={handlePrevSwipe}
+          >
+            <IconArrowLeft />
+          </button>
+          <button
+            className={styles[`controls-button`]}
+            onClick={handleNextSwipe}
+          >
+            <IconArrowRight />
+          </button>
+          <Button primary>More customer stories</Button>
+        </div>
+
+        <Spacing />
+
         <Swiper
           direction="horizontal"
           slidesPerView={1}
@@ -29,6 +53,7 @@ const Testimonials: React.FC = () => {
               spaceBetween: 30,
             },
           }}
+          onSwiper={(swiper) => handleSetSwiper(swiper)}
         >
           {TestimonialsData.map(({ name, role, testimonial, company }) => {
             return (

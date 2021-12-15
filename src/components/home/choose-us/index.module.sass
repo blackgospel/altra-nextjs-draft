@@ -1,32 +1,22 @@
 @import "styles/variables"
 @import "styles/media"
-  
+
 .container
-  color: $white
-  background: $primary-color
-  border-radius: $primary-border-radius
-  text-align: center
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px
-
-.wrapper
-  width: 80%
   margin: 0 auto
-  padding: $xxl-padding $lg-padding
+  text-align: center
 
-  @include media(sm)
-    padding: $xxl-padding $xxxl-padding
-    max-width: 640px
+  @include media(md)
+    max-width: 32em
+    padding: $xxl-padding 0 
 
 .title
-  
+  color: $black
+
+.content 
+  color: $black
+
 .subtitle
-
-.button-wrapper
-
-.image-wrapper
-  
-  img
-    border-radius: $primary-border-radius
+  font-weight: bold
 
 .list
   counter-reset: li
@@ -39,7 +29,7 @@
   p
     position: relative
     display: block
-    padding: .4em .4em .4em 2em
+    padding: .7em .4em .7em 2em
     margin: .5em 0
     background: rgba(127,219,213,0.4)
     text-decoration: none

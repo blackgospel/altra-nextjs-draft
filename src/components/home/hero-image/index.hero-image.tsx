@@ -1,4 +1,4 @@
-import HeroDashboardImage from 'assets/images/hero-dashboard.png'
+import HeroDashboardImage from 'assets/images/home/hero-dashboard.png'
 import Image from 'next/image'
 import styles from './index.module.sass'
 

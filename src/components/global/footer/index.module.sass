@@ -16,9 +16,7 @@
   max-width: 1100px
 
   .logo
-    
-    img
-      max-width: 100%
+    width: 156px
 
   .navbar-wrapper
 
@@ -57,6 +55,31 @@
 
   .button-wrapper
 
+.contact-us-wrapper
+  
+  @include media(sm)
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  .content
+    color: $white
+    margin-bottom: $md-padding
+
+  .link-wrapper
+    display: flex
+    align-items: center
+    color: $white
+    transition: $transition-duration $transition-ease
+    
+    .icon
+      margin-right: $sm-padding
+      width: 24px
+      height: 24px
+
+    @include hover
+      opacity: 0.8
+      
 
 .copyright-wrapper
   margin: 0 auto
@@ -79,3 +102,5 @@
     display: inline-flex
     align-items: center
     color: $white
+    cursor: pointer
+

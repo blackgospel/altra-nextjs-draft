@@ -9,14 +9,20 @@
   background-color: rgba(255, 255, 255, 0.5)
   transform: translateY(-60%)
   margin-bottom: -64px
+  max-width: 93%
   
   @include media(sm)
     transform: translateY(-40%)
     margin-bottom: -84px
+    max-width: min(640px, 90%)
 
   @include media(md)
     transform: translateY(-28%)
     margin-bottom: -128px
+    max-width: min(760px, 90%)
+
+  @include media(lg)
+    max-width: $navbar-width
   
   .image-wrapper
 
