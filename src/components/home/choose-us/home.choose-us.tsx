@@ -14,8 +14,9 @@ const ChooseUs: React.FC = () => {
         <Spacing />
 
         <p className={styles.content}>
-          Whether you're interested in one or all of our modules, you can mix
-          and match to suit your requirements. Add or remove modules with ease.
+          Whether you&apos;re interested in one or all of our modules, you can
+          mix and match to suit your requirements. Add or remove modules with
+          ease.
         </p>
 
         <Spacing />

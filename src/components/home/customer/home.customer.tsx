@@ -23,9 +23,9 @@ const Customer: React.FC = () => {
             </div>
             <div className={styles[`customer-content`]}>
               <p className={styles[`customer-testimonial`]}>
-                It is simple to use for both staff and families. It's a great
-                tool to keep residents connected with their families as well,
-                sharing photos of good memories in their life.
+                It is simple to use for both staff and families. It&apos;s a
+                great tool to keep residents connected with their families as
+                well, sharing photos of good memories in their life.
               </p>
 
               <Spacing space="sm" />
