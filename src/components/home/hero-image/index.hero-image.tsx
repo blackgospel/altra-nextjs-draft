@@ -6,7 +6,7 @@ const HeroImage = () => {
   return (
     <div className={styles[`hero-image-wrapper`]}>
       <div className={styles[`image-wrapper`]}>
-        <Image priority={true} src={HeroDashboardImage} alt="hero-image" />
+        <Image src={HeroDashboardImage} alt="hero-image" />
       </div>
     </div>
   )
