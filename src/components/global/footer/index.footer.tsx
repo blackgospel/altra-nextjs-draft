@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
 
             <Spacing space="sm" />
 
-            <a href="tel=+1 321-275-3587" className={styles[`link-wrapper`]}>
+            <a href="tel:+1 321-275-3587" className={styles[`link-wrapper`]}>
               <div className={styles.icon}>
                 <Image src={FlagUSA} alt="usa flag" />
               </div>
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
 
             <Spacing space="sm" />
 
-            <a href="mailto=hello@altra.ie" className={styles[`link-wrapper`]}>
+            <a href="mailto:hello@altra.ie" className={styles[`link-wrapper`]}>
               <div className={styles.icon}>
                 <IconMail />
               </div>
