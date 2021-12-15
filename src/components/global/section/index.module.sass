@@ -4,11 +4,15 @@
 .container
   position: relative
   overflow: hidden
-  padding: $xxl-padding $lg-padding
+  padding: $xxxl-padding $lg-padding
   background-color: #fff
 
   @include media(md)
-    padding: $xxxl-padding $md-padding
+    padding: $xxxxl-padding $md-padding
+
+  @include media(lg)
+    padding-left: 250px
+    padding-right: 250px
 
   &:global(.section-alt) 
     background-color: #fcf9f5

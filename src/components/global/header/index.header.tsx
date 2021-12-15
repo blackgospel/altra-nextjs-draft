@@ -11,12 +11,14 @@ const Header: React.FC = () => {
         <article className={styles[`headline-content`]}>
           <h1 className={styles.headline}>Improve resident wellbeing </h1>
 
-          <Spacing space="md" />
+          <Spacing space="sm" />
 
           <p className={styles.mission}>
             Altra`s easy to use platform helps you deliver on your promise of
             providing meaningful, person-centered care.
           </p>
+
+          <Spacing space="xl" />
         </article>
       </div>
     </header>

@@ -3,28 +3,23 @@
 @import "styles/flex"
 
 .container
-  background-color: lightblue
+  background-color: rgb(127,219,213)
+  background-image: linear-gradient(135deg, rgb(127,219,213) 0%, rgba(75,186,221,1) 100%)
   padding: $md-padding
   position: relative
-  height: 65vh
-
-  @include media(xs)
-    height: 55vh
-
-  @include media(sm)
-    height: 45vh
+  overflow: visible
 
   @include media(md)
     border-radius: $primary-border-radius
     margin: $section-hero-margin
-    height: auto
+    margin-bottom: 0
 
 .headline-wrapper
   height: 100%
+  margin-top: $navbar-height
 
   @include media(md)
-    margin-top: $navbar-height
-    padding: $xxxl-padding 0
+    padding: $xl-padding 0
 
 .headline-content
   @include flexColumn
@@ -37,9 +32,11 @@
   @include media(sm)
     min-width: 400px
     max-width: 640px
+    margin-bottom: $lg-padding
 
 .headline
   color: $white
 
 .mission
   color: $white
+

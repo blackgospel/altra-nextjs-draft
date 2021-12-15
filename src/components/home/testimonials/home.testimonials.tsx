@@ -24,7 +24,7 @@ const Testimonials: React.FC = () => {
               slidesPerView: 2,
               spaceBetween: 20,
             },
-            '1024': {
+            '1160': {
               slidesPerView: 3,
               spaceBetween: 30,
             },

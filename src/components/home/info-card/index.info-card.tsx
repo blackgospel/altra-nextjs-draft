@@ -10,7 +10,7 @@ const InfoCard: React.FC<HomeInfoCardProps> = ({
 }) => {
   return (
     <Section>
-      <div className={styles.container} style={{ backgroundColor: color }}>
+      <div className={styles.container} style={{ background: color }}>
         <div className={styles.wrapper}>
           <h1 className={styles.headline}>{title}</h1>
 

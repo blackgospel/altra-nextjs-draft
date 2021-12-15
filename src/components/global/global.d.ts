@@ -6,3 +6,7 @@ interface UseNavbarType {
 interface SectionProps {
   altColor?: boolean
 }
+
+interface PageProps {
+  title?: string
+}

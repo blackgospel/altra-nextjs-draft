@@ -1,4 +1,6 @@
-import { IconMenu } from '@tabler/icons'
+import { IconMenu2 } from '@tabler/icons'
+import Logo from 'assets/images/logo.png'
+import Image from 'next/image'
 import useNavbar from './hooks/useNavbar'
 import styles from './index.module.sass'
 import Nav from './nav/index.nav'
@@ -10,10 +12,12 @@ const Navbar: React.FC = () => {
     <nav className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles[`nav-wrapper`]}>
-          <div className={styles[`logo-wrapper`]}>Logo</div>
+          <div className={styles[`logo-wrapper`]}>
+            <Image src={Logo} />
+          </div>
           <div className={styles[`mobile-content`]}>
             <div className={styles[`menu-icon`]}>
-              <IconMenu onClick={handleToggleActive} />
+              <IconMenu2 onClick={handleToggleActive} />
             </div>
           </div>
           <div className={styles[`desktop-content`]}>

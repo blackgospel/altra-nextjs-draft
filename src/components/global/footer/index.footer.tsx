@@ -1,4 +1,4 @@
-import { IconBrandLinkedin } from '@tabler/icons'
+import { IconArrowRight, IconBrandLinkedin } from '@tabler/icons'
 import Logo from 'assets/images/logo.png'
 import Button from 'components/atomic/button/atomic.button'
 import Spacing from 'components/atomic/spacing/atomic.spacing'
@@ -17,14 +17,16 @@ const Footer: React.FC = () => {
         <Spacing />
 
         <div className={styles[`schedule-demo-wrapper`]}>
-          <p className={styles.content}>
-            We’ll use this time to learn about your current processes and show
-            you how Altra will save you over 8 hours per week engaging with
-            families and communicating with staff.
-          </p>
-          <Spacing />
+          <div className={styles.content}>
+            <h3 className={styles.content}>
+              Ready to improve care through Altra?
+            </h3>
+            <p className={styles.content}>Schedule a demo now</p>
+          </div>
           <div className={styles[`button-wrapper`]}>
-            <Button>Pick a time</Button>
+            <Button>
+              Pick a time <IconArrowRight style={{ marginLeft: 8 }} />
+            </Button>
           </div>
         </div>
 

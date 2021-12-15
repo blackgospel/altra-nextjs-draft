@@ -1,5 +1,16 @@
+@import "styles/variables"
+@import "styles/media"
+  
 .container
-  background-color: 'red'
-  padding: 6px 12px
-  border-radius: 6px
-  border: 1px solid black
+  display: inline-flex
+  align-items: center
+  padding: $sm-padding $xl-padding
+  border-radius: $primary-border-radius
+  border: 1px solid $white
+  color: $white
+  background-color: transparent
+  transition: $transition-duration $transition-ease
+
+  @include hover
+    background-color: $white
+    color: $black

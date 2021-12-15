@@ -24,21 +24,36 @@
 
     .navbar-list
 
+      @include media(sm)
+        display: flex
+        align-items: center 
+
       .navbar-item
         margin-bottom: $md-padding
         font-size: 20px
         
         @include lastChild
           margin-bottom: 0
+          margin-right: 0
+
+        @include media(sm)
+          margin-bottom: 0
+          margin-right: $md-padding
         
         a
           color: $secondary-color
 
 
 .schedule-demo-wrapper
+  
+  @include media(sm)
+    display: flex
+    align-items: center
+    justify-content: space-between
 
   .content
     color: $white
+    margin-bottom: $md-padding
 
   .button-wrapper
 
