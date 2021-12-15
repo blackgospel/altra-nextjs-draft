@@ -30,9 +30,9 @@ const InfoCard: React.FC<HomeInfoCardProps> = ({
           <Spacing space="lg" />
 
           <ol className={styles.list}>
-            {list?.map((item) => {
+            {list?.map((item, index) => {
               return (
-                <li className={styles[`list-item`]}>
+                <li key={`info-card-${index}`} className={styles[`list-item`]}>
                   <p>{item}</p>
                 </li>
               )
