@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
         <div className={styles[`contact-us-wrapper`]}>
           <div className={styles.content}>
             <h3 className={styles.content}>Get in touch with us:</h3>
-            <a href="tel=+353 83 463 9033" className={styles[`link-wrapper`]}>
+            <a href="tel:+353 83 463 9033" className={styles[`link-wrapper`]}>
               <div className={styles.icon}>
                 <Image src={FlagIreland} alt="irish flag" />
               </div>
