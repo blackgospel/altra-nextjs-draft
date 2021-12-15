@@ -5,7 +5,7 @@ import styles from './index.module.sass'
 
 const ChooseUs: React.FC = () => {
   return (
-    <Section>
+    <Section bubbleRight>
       <div className={styles.container}>
         <h2 className={styles.title}>
           Choose the modules that suit your needs

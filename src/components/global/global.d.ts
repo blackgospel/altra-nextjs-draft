@@ -5,6 +5,7 @@ interface UseNavbarType {
 
 interface SectionProps {
   altColor?: boolean
+  bubbleRight?: boolean
 }
 
 interface PageProps {

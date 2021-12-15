@@ -1,7 +1,9 @@
 @import "styles/variables"
 @import "styles/media"
+@import "styles/flex"
   
 .container
+  position: relative
   color: $white
   background: $primary-color
   border-radius: $primary-border-radius
@@ -22,6 +24,27 @@
 .subtitle
 
 .button-wrapper
+  position: absolute
+  top: 16px
+  right: 16px
+
+  .link-button
+    @include flexCenter
+    width: 32px
+    height: 32px
+    border: 1px solid $white
+    border-radius: 100%
+    color: $white
+    transition: $transition-duration $transition-ease
+
+    @include hover
+      background-color: $white
+      color: $black
+
+    @include media(md)
+      width: 48px
+      height: 48px
+
 
 .image-wrapper
   
