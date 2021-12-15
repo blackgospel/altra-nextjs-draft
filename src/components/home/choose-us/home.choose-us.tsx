@@ -14,7 +14,7 @@ const ChooseUs: React.FC = () => {
         <Spacing />
 
         <p className={styles.content}>
-          Whether you’re interested in one or all of our modules, you can mix
+          Whether you're interested in one or all of our modules, you can mix
           and match to suit your requirements. Add or remove modules with ease.
         </p>
 
@@ -49,9 +49,11 @@ const ChooseUs: React.FC = () => {
 
         <Spacing space="lg" />
 
-        <Button filled primary large>
-          Check out our products
-        </Button>
+        <div>
+          <Button filled primary large>
+            Check out our products
+          </Button>
+        </div>
       </div>
     </Section>
   )

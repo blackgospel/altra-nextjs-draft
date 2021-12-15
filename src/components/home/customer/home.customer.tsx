@@ -23,22 +23,19 @@ const Customer: React.FC = () => {
             </div>
             <div className={styles[`customer-content`]}>
               <p className={styles[`customer-testimonial`]}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                officiis commodi tempore perspiciatis numquam repudiandae quas
-                cum sequi blanditiis. Ipsum ab a nostrum odio doloribus rerum
-                dolore illo maxime doloremque!
+                It is simple to use for both staff and families. It's a great
+                tool to keep residents connected with their families as well,
+                sharing photos of good memories in their life.
               </p>
 
               <Spacing space="sm" />
 
               <div className={styles[`customer-info`]}>
-                <p className={styles[`customer-name`]}>Brian Cunningham</p>
+                <p className={styles[`customer-name`]}>Jaison John</p>
                 <div className={styles[`customer-org`]}>
-                  <p className={styles[`customer-role`]}>Managing Director</p>
+                  <p className={styles[`customer-role`]}>Director of Nursing</p>
                   <p className={styles.separator}>@</p>
-                  <p className={styles[`customer-company`]}>
-                    Allen Recruitment
-                  </p>
+                  <p className={styles[`customer-company`]}>SignaCare</p>
                 </div>
               </div>
             </div>
