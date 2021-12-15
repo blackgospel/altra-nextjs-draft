@@ -42,7 +42,7 @@ const InfoCard: React.FC<HomeInfoCardProps> = ({
           <Spacing />
 
           <div className={styles[`image-wrapper`]}>
-            <Image src={image} alt={title} />
+            <Image priority={true} src={image} alt={title} />
           </div>
         </div>
       </div>
