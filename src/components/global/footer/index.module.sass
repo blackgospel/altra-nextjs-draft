@@ -1,0 +1,106 @@
+@import "styles/media"
+@import "styles/variables"
+
+.container
+  background-color: #32313b
+  padding: $xxl-padding
+  border-radius: $primary-border-radius
+  margin: $section-mobile-footer-margin
+
+  @include media(md)
+    margin: $section-footer-margin
+
+
+.footer-wrapper
+  margin: 0 auto
+  max-width: 1100px
+
+  .logo
+    width: 156px
+
+  .navbar-wrapper
+
+    .navbar-list
+
+      @include media(sm)
+        display: flex
+        align-items: center 
+
+      .navbar-item
+        margin-bottom: $md-padding
+        font-size: 20px
+        
+        @include lastChild
+          margin-bottom: 0
+          margin-right: 0
+
+        @include media(sm)
+          margin-bottom: 0
+          margin-right: $md-padding
+        
+        a
+          color: $secondary-color
+
+
+.schedule-demo-wrapper
+  
+  @include media(sm)
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  .content
+    color: $white
+    margin-bottom: $md-padding
+
+  .button-wrapper
+
+.contact-us-wrapper
+  
+  @include media(sm)
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  .content
+    color: $white
+    margin-bottom: $md-padding
+
+  .link-wrapper
+    display: flex
+    align-items: center
+    color: $white
+    transition: $transition-duration $transition-ease
+    
+    .icon
+      margin-right: $sm-padding
+      width: 24px
+      height: 24px
+
+    @include hover
+      opacity: 0.8
+      
+
+.copyright-wrapper
+  margin: 0 auto
+  max-width: 1100px
+  
+  @include media(sm)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+  .copyright
+    color: $white
+    margin-bottom: $md-padding
+
+    @include media(sm)
+      margin-bottom: 0
+
+  .linked-in-text
+    display: inline-flex
+    align-items: center
+    color: $white
+    cursor: pointer
+
