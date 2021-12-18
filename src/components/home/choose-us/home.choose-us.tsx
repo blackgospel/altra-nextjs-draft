@@ -7,7 +7,7 @@ import styles from './index.module.sass'
 
 const ChooseUs: React.FC = () => {
   return (
-    <Section>
+    <Section bubbleRight2>
       <div className={styles.container}>
         <h2 className={styles.title}>{HomeChooseUsData.title}</h2>
 

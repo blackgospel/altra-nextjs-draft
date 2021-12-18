@@ -16,7 +16,7 @@ const Testimonials: React.FC = () => {
   const { handleSetSwiper, handleNextSwipe, handlePrevSwipe } = useSwiper()
 
   return (
-    <Section>
+    <Section bubbleLeft2>
       <div className={styles.container}>
         <div className={styles.controls}>
           <button className={styles.controls_button} onClick={handlePrevSwipe}>

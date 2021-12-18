@@ -28,7 +28,12 @@ interface UseNavbarType {
 }
 
 interface SectionProps {
-  bubbleRight?: boolean
+  bubbleRight1?: boolean
+  bubbleRight2?: boolean
+  bubbleRightSmall?: boolean
+  bubbleLeft1?: boolean
+  bubbleLeft2?: boolean
+  bubbleLeftSmall?: boolean
   fullWidth?: boolean
   lgWidth?: boolean
 }

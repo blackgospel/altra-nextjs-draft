@@ -11,9 +11,9 @@ import styles from './index.module.sass'
 const ProductCard: React.FC<HomeProductCardProps> = () => {
   return (
     <>
-      {HomeProductData.map(({ title, description, list, color }) => {
+      {HomeProductData.map(({ title, description, list, color }, index) => {
         return (
-          <Section>
+          <Section bubbleLeft1={index === 1}>
             <div className={styles.container}>
               <div className={styles.wrapper}>
                 <Card
