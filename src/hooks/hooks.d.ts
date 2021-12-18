@@ -5,18 +5,16 @@ interface UseSwiperType {
   handleNextSwipe: () => void
 }
 
-type UseWindowSizeType = FetchSizeResponse
-
-interface FetchSizeResponse {
+interface WindowSize {
   width: number
   height: number
 }
 
-type FetchSizeType = () => FetchSizeResponse
+type UseWindowSizeType = WindowSize
 
-type HandleResizeType = () => void
+type HandleResizeType = void
 
 interface UsePageType {
-  ref: MutableRefObject<HTMLElement | undefined>
+  pageRef: MutableRefObject<HTMLElement | undefined>
   scrollRef: MutableRefObject<HTMLElement | undefined>
 }
