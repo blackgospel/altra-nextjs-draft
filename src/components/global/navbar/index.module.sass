@@ -1,0 +1,92 @@
+@import "styles/mixins"
+@import "styles/media"
+
+$logo-size: 96px
+$menu-icon-size: 24px
+$menu-border: 1px solid rgba(50, 49, 59, 0.1) 
+
+.container
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  background-color: var(--color-surface)
+  border-radius: var(--border-radius-primary)
+  width: 93%
+  margin: 0 auto
+  z-index: 9
+
+.wrapper
+  position: relative
+  padding: var(--space-sm) var(--space-md)
+
+.nav_wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.logo_wrapper
+  width: $logo-size
+
+.mobile_content
+  display: block
+
+  @include media(md)
+    display: none
+  
+  .menu_icon
+    width: $menu-icon-size
+    height: $menu-icon-size
+
+.mobile_navbar_wrapper 
+
+  @include media(md)
+    display: none
+
+  .navbar_wrapper
+    margin-top: var(--space-sm)
+
+  .navbar_list
+    display: flex
+    flex-direction: column
+
+  .navbar_item
+    border-top: $menu-border
+    padding: var(--space-sm) 0
+
+    &:first-child
+      border-top: 0
+
+
+.desktop_content
+  display: none
+
+  @include media(md)
+    display: block
+
+  .navbar_wrapper
+
+    .navbar_list
+      display: flex
+      align-items: center
+
+    .navbar_item
+      margin-right: var(--space-md)
+
+      &:last-child
+        margin-right: 0
+
+.navbar_item
+
+  a
+    color: var(--black)
+    transition: var(--transition-primary)
+
+    @include hover
+      color: var(--color-primary)
+
+.navbar_button
+  width: 100%
+
+  @include media(md)
+    width: auto
+  

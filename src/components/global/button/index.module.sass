@@ -1,0 +1,26 @@
+@import "styles/mixins"
+
+.container
+  font-weight: bold
+  padding: var(--space-sm) var(--space-md)
+  background-color: var(--color-primary)
+  color: var(--color-on-primary)
+  border-radius: var(--border-radius-primary)
+  transition: var(--transition-primary)
+
+  @include hover
+    background-color: var(--color-primary-dark)
+  
+.secondary
+  background-color: var(--color-secondary)
+  color: var(--color-on-secondary)
+
+  @include hover
+    background-color: var(--color-secondary-dark)
+
+.small
+  padding: var(--space-xs) var(--space-sm)
+
+.large
+  padding: var(--space-sm) var(--space-xl)
+  font-size: 100%

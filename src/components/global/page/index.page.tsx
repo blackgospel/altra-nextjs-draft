@@ -9,12 +9,14 @@ const Page: React.FC<PageProps> = ({
   const { pageRef, scrollRef } = usePage()
 
   return (
-    <div ref={pageRef} className={styles.container}>
+    <div className={styles.container}>
       <Head>
         <title>{title}</title>
       </Head>
-      <div ref={scrollRef} className={styles.scroll}>
-        {children}
+      <div ref={pageRef} className={styles.wrapper}>
+        <div ref={scrollRef} className={styles.scroll}>
+          {children}
+        </div>
       </div>
     </div>
   )
