@@ -18,6 +18,10 @@ $menu-border: 1px solid rgba(50, 49, 59, 0.1)
 .wrapper
   position: relative
   padding: var(--space-sm) var(--space-md)
+  transition: var(--transition-primary)
+
+  &.active
+    height: 305px
 
 .nav_wrapper
   display: flex
@@ -38,12 +42,23 @@ $menu-border: 1px solid rgba(50, 49, 59, 0.1)
     height: $menu-icon-size
 
 .mobile_navbar_wrapper 
+  transform: translateY(-100%)
+  opacity: 0
+  height: 0
+  transition: height var(--transition-secondary), opacity 75ms ease-out, transform var(--transition-primary)
+  pointer-events: none
+
+  &.active
+    height: 243px
+    transform: translateY(-0%)
+    opacity: 1
+    pointer-events: unset
 
   @include media(md)
     display: none
 
   .navbar_wrapper
-    margin-top: var(--space-sm)
+    // margin-top: var(--space-sm)
 
   .navbar_list
     display: flex

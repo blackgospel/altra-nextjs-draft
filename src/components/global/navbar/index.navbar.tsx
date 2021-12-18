@@ -1,8 +1,9 @@
-import { IconMenu2 } from '@tabler/icons'
 import Logo from 'assets/images/logo.png'
+import cn from 'classnames'
 import Image from 'next/image'
 import useNavbar from './hooks/useNavbar'
 import styles from './index.module.sass'
+import NavMenu from './menu/index.menu'
 import Nav from './nav/index.nav'
 
 const Navbar: React.FC = () => {
@@ -17,7 +18,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className={styles.mobile_content}>
             <div className={styles.menu_icon}>
-              <IconMenu2 onClick={handleToggleActive} />
+              <NavMenu active={active} onClick={handleToggleActive} />
             </div>
           </div>
           <div className={styles.desktop_content}>
@@ -25,7 +26,14 @@ const Navbar: React.FC = () => {
           </div>
         </div>
 
-        <div className={styles.mobile_navbar_wrapper}>{active && <Nav />}</div>
+        <div
+          className={cn([
+            styles.mobile_navbar_wrapper,
+            { [styles.active]: active },
+          ])}
+        >
+          <Nav />
+        </div>
       </div>
     </nav>
   )

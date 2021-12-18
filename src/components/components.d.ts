@@ -27,6 +27,11 @@ interface UseNavbarType {
   handleToggleActive: () => void
 }
 
+interface NavMenuType {
+  active: boolean
+  onClick: () => void
+}
+
 interface SectionProps {
   bubbleRight1?: boolean
   bubbleRight2?: boolean
