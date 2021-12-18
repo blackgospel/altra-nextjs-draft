@@ -1,0 +1,23 @@
+@import "styles/media"
+
+.container
+  padding: var(--space-lg)
+  border-radius: var(--border-radius-primary)
+  background-color: var(--color-surface)
+  color: var(--color-on-surface)
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em
+
+  @include media(sm)
+    padding: var(--space-xl)
+  
+.primary
+  background-color: var(--color-primary)
+  color: var(--color-on-primary)
+
+.secondary
+  background-color: var(--color-secondary)
+  color: var(--color-on-secondary)
+
+.accent
+  background-color: var(--color-accent)
+  color: var(--color-on-accent)

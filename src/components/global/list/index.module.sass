@@ -2,10 +2,12 @@
 
 $list-align-margin: 1.3em
 $list-counter-size: 2em
-$list-bg-color: rgb(127, 219, 213)
+$list-bg-primary: rgb(127, 219, 213)
+$list-bg-secondary: rgb(75, 186, 221)
+$list-bg-accent: rgb(11, 49, 61)
   
 .container
-  max-width: 640px
+  max-width: var(--layout-sm)
   margin: 0 auto
 
 .list
@@ -26,12 +28,12 @@ $list-bg-color: rgb(127, 219, 213)
   padding-right: var(--space-xs)
   padding-bottom: var(--space-sm)
   padding-left: var(--space-lg)
-  background: rgba($list-bg-color, 0.4)
+  background: rgba($list-bg-primary, 0.4)
   border-radius: var(--border-radius-primary)
   transition: var(--transition-primary)
 
   @include hover
-    background: rgba($list-bg-color, 0.8)
+    background: rgba($list-bg-primary, 0.8)
 
   &::before
     content: counter(li)
@@ -54,3 +56,25 @@ $list-bg-color: rgb(127, 219, 213)
 
 .text
   margin: 0
+
+.secondary
+
+  .list_text
+    background: rgba($list-bg-secondary, 0.4)
+
+    @include hover
+      background: rgba($list-bg-secondary, 0.8)
+
+    &::before
+      background: var(--color-secondary)
+
+.accent
+
+  .list_text
+    background: rgba($list-bg-accent, 0.4)
+
+    @include hover
+      background: rgba($list-bg-accent, 0.8)
+
+    &::before
+      background: var(--color-accent)

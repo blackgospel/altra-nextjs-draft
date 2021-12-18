@@ -9,6 +9,8 @@ interface ComponentProps {
 interface ListProps {
   title: string
   list: string[]
+  accent?: boolean
+  secondary?: boolean
 }
 
 type IconSizes = 'xs' | 'sm' | 'md' | 'lg'
@@ -41,3 +43,12 @@ interface ButtonProps {
   sm?: boolean
   lg?: boolean
 }
+
+interface CardProps {
+  className?: string
+  primary?: boolean
+  secondary?: boolean
+  accent?: boolean
+}
+
+interface HomeProductCardProps {}

@@ -1,9 +1,14 @@
 import cn from 'classnames'
 import styles from './index.module.sass'
 
-const List: React.FC<ListProps> = ({ title, list }) => {
+const List: React.FC<ListProps> = ({ title, list, secondary, accent }) => {
   return (
-    <div className={cn([styles.container])}>
+    <div
+      className={cn([
+        styles.container,
+        { [styles.secondary]: secondary, [styles.accent]: accent },
+      ])}
+    >
       <ul className={styles.list}>
         {list.map((item, index) => {
           return (
