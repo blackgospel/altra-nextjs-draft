@@ -14,12 +14,14 @@ const HomeHero = () => {
         <h1 className={styles.title}>{HomeHeroData.title}</h1>
         <p className={styles.description}>{HomeHeroData.description}</p>
         <Spacing />
-        <Button secondary lg>
-          {HomeHeroData.button}
-        </Button>
+        <div className={styles.button_wrapper}>
+          <Button secondary lg>
+            {HomeHeroData.button}
+          </Button>
+        </div>
         <Spacing />
-        <div className={styles.hero_image_wrapper}>
-          <div className={styles.hero_image}>
+        <div className={styles.image_wrapper}>
+          <div className={styles.image}>
             <Image src={HeroImage} priority={true} />
           </div>
         </div>

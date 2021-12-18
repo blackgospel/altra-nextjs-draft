@@ -1,48 +1,72 @@
 @import "styles/media"
-@import "styles/variables"
+@import "styles/mixins"
+
+$footer-bg-color: #32313B
+$section-footer-margin: 48px
+$section-mobile-footer-margin: 24px
+$footer-logo-size: 24px
+$footer-contact-logos-size: 156px
 
 .container
-  background-color: #32313b
-  padding: $xxl-padding
-  border-radius: $primary-border-radius
-  margin: $section-mobile-footer-margin
-
+  background-color: $footer-bg-color
+  padding: var(--space-xl)
+  border-radius: var(--border-radius-secondary)
+  max-width: var(--layout-container)
+  margin: var(--space-lg) auto
+  width: 90%
+  
   @include media(md)
-    margin: $section-footer-margin
+    width: 94%
 
+.footer_wrapper
 
-.footer-wrapper
-  margin: 0 auto
-  max-width: 1100px
+  p
+    margin: 0
 
-  .logo
-    width: 156px
+.logo
+  width: $footer-logo-size
 
-  .navbar-wrapper
+.navbar_wrapper
 
-    .navbar-list
+  .navbar_list
+
+    @include media(sm)
+      display: flex
+      align-items: center 
+
+    .navbar_item
+      margin-bottom: var(--space-md)
+      
+      &:last-child
+        margin-bottom: 0
+        margin-right: 0
 
       @include media(sm)
-        display: flex
-        align-items: center 
+        margin-bottom: 0
+        margin-right: var(--space-md)
+      
+      a
+        color: var(--color-primary)
+        font-size: 120%
 
-      .navbar-item
-        margin-bottom: $md-padding
-        font-size: 20px
-        
-        @include lastChild
-          margin-bottom: 0
-          margin-right: 0
+.schedule_demo_wrapper
+  
+  @include media(md)
+    display: flex
+    align-items: center
+    justify-content: space-between
 
-        @include media(sm)
-          margin-bottom: 0
-          margin-right: $md-padding
-        
-        a
-          color: $secondary-color
+  .content
+    color: var(--white)
+    margin-bottom: var(--space-md)
 
+  .button_wrapper
+    display: block
 
-.schedule-demo-wrapper
+.contact_us_wrapper
+
+  svg 
+    color: var(--white)
   
   @include media(sm)
     display: flex
@@ -50,40 +74,25 @@
     justify-content: space-between
 
   .content
-    color: $white
-    margin-bottom: $md-padding
+    color: var(--white)
+    margin-bottom: var(--space-md)
 
-  .button-wrapper
-
-.contact-us-wrapper
-  
-  @include media(sm)
+  .link_wrapper
     display: flex
     align-items: center
-    justify-content: space-between
-
-  .content
-    color: $white
-    margin-bottom: $md-padding
-
-  .link-wrapper
-    display: flex
-    align-items: center
-    color: $white
-    transition: $transition-duration $transition-ease
+    color: var(--white)
+    transition: var(--transition-primary)
     
     .icon
-      margin-right: $sm-padding
-      width: 24px
-      height: 24px
+      margin-right: var(--space-sm)
+      width: $footer-logo-size
+      height: $footer-logo-size
 
     @include hover
       opacity: 0.8
       
 
-.copyright-wrapper
-  margin: 0 auto
-  max-width: 1100px
+.copyright_wrapper
   
   @include media(sm)
     display: flex
@@ -92,15 +101,18 @@
     width: 100%
 
   .copyright
-    color: $white
-    margin-bottom: $md-padding
+    color: var(--white)
+    margin-bottom: var(--space-sm)
 
     @include media(sm)
       margin-bottom: 0
 
-  .linked-in-text
+  .linked_in_text
     display: inline-flex
     align-items: center
-    color: $white
     cursor: pointer
+    color: var(--white)
+
+    svg
+      color: var(--white)
 

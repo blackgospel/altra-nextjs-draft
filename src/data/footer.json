@@ -1,11 +1,12 @@
 {
-  "title": "Choose the modules that suit your needs",
-  "description": "Whether you&apos;re interested in one or all of our modules, you can mix and match to suit your requirements. Add or remove modules with ease.",
-  "subtitle": "Get set up in 20 mins",
-  "list": [
-    "Choose the modules for you, be it Altra Family, Wellbeing Hub, Altra Staff, some or all.",
-    "Collate the relevant information and upload to Altra (Staff details, Resident details - connect with your care management system for easy onboarding).",
-    "We will train your staff and provide ongoing support so Altra works seamlessly alongside your existing processes and saves you time."
-  ],
-  "button": "Check out our products"
+  "demoTitle": "Ready to improve care through Altra?",
+  "demoMission": "Schedule a demo now",
+  "demoButton": "Pick a time",
+  "title": "Get in touch with us:",
+  "irelandNumber": "+353 83 463 9033",
+  "usaNumber": "+1 321-275-3587",
+  "email": "hello@altra.ie",
+  "copyright": "2021 Altra",
+  "linkedIn": "Connect with us on LinkedIn",
+  "linkedInLink": "https://www.linkedin.com/company/altra-ie/"
 }

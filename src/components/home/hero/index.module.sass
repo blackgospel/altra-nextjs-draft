@@ -6,7 +6,7 @@ $hero-margin-bottom: 130px
   position: relative
   background-color: var(--color-primary)
   color: var(--color-on-primary)
-  padding: var(--component-padding)
+  padding: var(--space-lg)
   max-width: var(--layout-container)
   margin-bottom: $hero-margin-bottom
 
@@ -20,7 +20,7 @@ $hero-margin-bottom: 130px
     margin: var(--space-lg) auto calc($hero-margin-bottom + 7% * 1.5)
 
   @include media(xl)
-    margin-bottom: 400px
+    margin-bottom: 300px
 
 .wrapper
   padding-top: var(--space-xxl)
@@ -38,14 +38,19 @@ $hero-margin-bottom: 130px
   max-width: var(--layout-default)
   margin: 0 auto
 
-.hero_image_wrapper
+.button_wrapper
+  
+  button
+    margin: 0 auto
+
+.image_wrapper
   background-color: rgba(255, 255, 255, 0.5)
   padding: var(--space-md)
   transform: translateY(50%)
   margin-top: -24%
   border-radius: var(--border-radius-secondary)
 
-.hero_image
+.image
 
   img
     border-radius: var(--border-radius-primary)

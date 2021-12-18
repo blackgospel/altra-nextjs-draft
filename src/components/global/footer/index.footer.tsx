@@ -2,6 +2,7 @@ import { IconArrowRight, IconBrandLinkedin, IconMail } from '@tabler/icons'
 import FlagIreland from 'assets/images/footer/irish-flag.png'
 import FlagUSA from 'assets/images/footer/usa-flag.png'
 import Logo from 'assets/images/logo-color.png'
+import FooterData from 'data/footer.json'
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../button/index.button'
@@ -11,70 +12,78 @@ import styles from './index.module.sass'
 const Footer: React.FC = () => {
   return (
     <footer className={styles.container}>
-      <div className={styles[`footer-wrapper`]}>
+      <div className={styles.footer_wrapper}>
         <div className={styles.logo}>
-          <Image src={Logo} alt="altra logo" />
+          <Image src={Logo} alt="Altra Logo" />
         </div>
 
         <Spacing />
 
-        <div className={styles[`schedule-demo-wrapper`]}>
+        <div className={styles.schedule_demo_wrapper}>
           <div className={styles.content}>
-            <h3 className={styles.content}>
-              Ready to improve care through Altra?
-            </h3>
-            <p className={styles.content}>Schedule a demo now</p>
+            <h3 className={styles.content}>{FooterData.demoTitle}</h3>
+            <p className={styles.content}>{FooterData.demoMission}</p>
           </div>
-          <div className={styles[`button-wrapper`]}>
-            <Button>
-              Pick a time <IconArrowRight style={{ marginLeft: 8 }} />
+          <div className={styles.button_wrapper}>
+            <Button lg>
+              {FooterData.demoButton}
+              <IconArrowRight style={{ marginLeft: 8 }} />
             </Button>
           </div>
         </div>
 
         <Spacing />
 
-        <div className={styles[`contact-us-wrapper`]}>
+        <div className={styles.contact_us_wrapper}>
           <div className={styles.content}>
-            <h3 className={styles.content}>Get in touch with us:</h3>
-            <a href="tel:+353 83 463 9033" className={styles[`link-wrapper`]}>
+            <h3 className={styles.content}>{FooterData.title}</h3>
+            <a
+              href={`tel:${FooterData.irelandNumber}`}
+              className={styles.link_wrapper}
+            >
               <div className={styles.icon}>
-                <Image src={FlagIreland} alt="irish flag" />
+                <Image src={FlagIreland} alt="Irish Flag" />
               </div>
-              +353 83 463 9033
+              {FooterData.irelandNumber}
             </a>
 
             <Spacing />
 
-            <a href="tel:+1 321-275-3587" className={styles[`link-wrapper`]}>
+            <a
+              href={`tel:${FooterData.usaNumber}`}
+              className={styles.link_wrapper}
+            >
               <div className={styles.icon}>
-                <Image src={FlagUSA} alt="usa flag" />
+                <Image src={FlagUSA} alt="USA Flag" />
               </div>
-              +1 321-275-3587
+              {FooterData.usaNumber}
             </a>
 
             <Spacing />
 
-            <a href="mailto:hello@altra.ie" className={styles[`link-wrapper`]}>
+            <a
+              href={`mailto:${FooterData.email}`}
+              className={styles.link_wrapper}
+            >
               <div className={styles.icon}>
                 <IconMail />
               </div>
-              hello@altra.ie
+              {FooterData.email}
             </a>
           </div>
         </div>
 
         <Spacing />
 
-        <div className={styles[`navbar-wrapper`]}>
-          <ul className={styles[`navbar-list`]}>
-            <li className={styles[`navbar-item`]}>
+        <div className={styles.navbar_wrapper}>
+          <ul className={styles.navbar_list}>
+            <li className={styles.navbar_item}>
               <Link href="/">Home</Link>
             </li>
-            <li className={styles[`navbar-item`]}>
+            <li className={styles.navbar_item}>
               <Link href="/">Products</Link>
             </li>
-            <li className={styles[`navbar-item`]}>
+            <li className={styles.navbar_item}>
               <Link href="/">Customers</Link>
             </li>
           </ul>
@@ -83,14 +92,12 @@ const Footer: React.FC = () => {
 
       <Spacing />
 
-      <div className={styles[`copyright-wrapper`]}>
-        <p className={`${styles.copyright} typography-copyright`}>
-          &copy; 2021 Altra
-        </p>
-        <Link href="https://www.linkedin.com/company/altra-ie/">
-          <p className={`${styles[`linked-in-text`]} typography-copyright`}>
+      <div className={styles.copyright_wrapper}>
+        <p className={styles.copyright}>&copy; {FooterData.copyright}</p>
+        <Link href={FooterData.linkedInLink}>
+          <p className={styles.linked_in_text}>
             <IconBrandLinkedin style={{ marginRight: 6 }} />
-            Connect with us on LinkedIn
+            {FooterData.linkedIn}
           </p>
         </Link>
       </div>

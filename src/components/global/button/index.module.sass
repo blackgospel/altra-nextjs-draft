@@ -1,12 +1,17 @@
 @import "styles/mixins"
 
 .container
+  display: flex
+  align-items: center
   font-weight: bold
   padding: var(--space-sm) var(--space-md)
   background-color: var(--color-primary)
   color: var(--color-on-primary)
   border-radius: var(--border-radius-primary)
   transition: var(--transition-primary)
+  
+  svg
+    color: var(--color-on-primary)
 
   @include hover
     background-color: var(--color-primary-dark)

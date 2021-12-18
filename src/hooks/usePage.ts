@@ -19,13 +19,8 @@ const usePage = () => {
       (scrollConfigs.current - scrollConfigs.previous) * scrollConfigs.ease
     scrollConfigs.rounded = Math.round(scrollConfigs.previous * 100) / 100
 
-    const difference = scrollConfigs.current - scrollConfigs.rounded
-    const acceleration = difference / size.width
-    const velocity = +acceleration
-    const skew = velocity * 7.5
-
     if (scrollRef.current) {
-      scrollRef.current.style.transform = `translate3d(0, -${scrollConfigs.rounded}px, 0) skewY(${skew}deg)`
+      scrollRef.current.style.transform = `translate3d(0, -${scrollConfigs.rounded}px, 0)`
     }
 
     requestAnimationFrame(() => customScroll())

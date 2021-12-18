@@ -25,7 +25,7 @@ const ChooseUs: React.FC = () => {
 
         <Spacing />
 
-        <div>
+        <div className={styles.button_wrapper}>
           <Button lg>{HomeChooseUsData.button}</Button>
         </div>
       </div>

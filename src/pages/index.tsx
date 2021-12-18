@@ -1,3 +1,4 @@
+import Footer from 'components/global/footer/index.footer'
 import Page from 'components/global/page/index.page'
 import ChooseUs from 'components/home/choose-us/home.choose-us'
 import Customer from 'components/home/customer/home.customer'
@@ -13,6 +14,7 @@ const Home = () => {
       <ProductCard />
       <ChooseUs />
       <Testimonials />
+      <Footer />
     </Page>
   )
 }

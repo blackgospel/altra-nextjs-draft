@@ -39,9 +39,11 @@ const ProductCard: React.FC<HomeProductCardProps> = () => {
 
                   <Spacing />
 
-                  <Button lg secondary={color === 'primary'}>
-                    Meet the product
-                  </Button>
+                  <div className={styles.button_wrapper}>
+                    <Button lg secondary={color === 'primary'}>
+                      Meet the product
+                    </Button>
+                  </div>
 
                   <Spacing />
 
