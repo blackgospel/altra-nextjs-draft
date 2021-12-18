@@ -1,0 +1,29 @@
+@import "styles/media"
+
+.container
+  text-align: center
+
+.title
+  color: var(--black)
+
+.content 
+  color: var(--black)
+
+.button_wrapper
+  
+  button
+    margin: 0 auto
+
+.companies_wrapper
+  display: grid
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) )
+  grid-gap: var(--space-lg)
+  place-content: center
+
+  @include media(md)
+    grid-template-columns: repeat( auto-fit, minmax(175px, 1fr) )
+
+.companies
+  display: flex
+  align-items: center
+  justify-content: center
