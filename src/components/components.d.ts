@@ -15,12 +15,18 @@ type IconSizes = 'xs' | 'sm' | 'md' | 'lg'
 
 interface IconProps {
   icon: JSX.Element
-  size: IconSizes
+  size?: IconSizes
+  primary?: boolean
+  secondary?: boolean
 }
 
 interface UseNavbarType {
   active: boolean
   handleToggleActive: () => void
+}
+
+interface SectionProps {
+  bubbleRight?: boolean
 }
 
 interface SpacingProps {

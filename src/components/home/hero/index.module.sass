@@ -1,20 +1,26 @@
 @import "styles/media"
 
+$hero-margin-bottom: 130px
+
 .container
   position: relative
   background-color: var(--color-primary)
   color: var(--color-on-primary)
   padding: var(--component-padding)
   max-width: var(--layout-container)
-  margin-bottom: 300px
+  margin-bottom: $hero-margin-bottom
 
   @include media(sm)
     padding: var(--space-lg)
+    margin-bottom: calc($hero-margin-bottom + 5% * 1.5)
   
   @include media(md)
     border-radius: var(--border-radius-secondary)
     width: 94%
-    margin: var(--space-lg) auto 300px
+    margin: var(--space-lg) auto calc($hero-margin-bottom + 7% * 1.5)
+
+  @include media(xl)
+    margin-bottom: 400px
 
 .wrapper
   padding-top: var(--space-xxl)
