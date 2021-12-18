@@ -1,0 +1,48 @@
+:root
+  --font-primary: Outfit, sans-serif
+  --font-secondary: serif
+
+  --text-base-size: 1em
+  --text-scale-ratio: 1.2
+
+  --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)))
+  --text-sm: calc(1em / var(--text-scale-ratio))
+  --text-md: calc(1em * var(--text-scale-ratio))
+  --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio))
+  --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio))
+  --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio))
+  --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio))
+
+  --heading-line-height: 1.2
+  --body-line-height: 1.4
+
+*,
+html,
+body
+  font-family: var(--font-primary)
+
+body
+  font-size: var(--text-base-size)
+
+h1, h2, h3, h4, form legend
+  margin-bottom: var(--space-xxs)
+  line-height: var(--heading-line-height)
+
+h1
+  font-size: var(--text-xxxl)
+
+h2
+  font-size: var(--text-xxl)
+
+h3
+  font-size: var(--text-lg)
+
+small
+  font-size: var(--text-sm)
+
+p
+  line-height: var(--body-line-height)
+
+b, strong
+  font-weight: bold
+

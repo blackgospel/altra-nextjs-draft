@@ -1,0 +1,66 @@
+:root
+  --color-primary: #4BBADD
+  --color-primary-light: #7CCDE6
+  --color-primary-dark: #2AADD7
+  --color-on-primary: #FFFFFF
+
+  //not working atm color-mod not available
+  --color-secondary: #7FDBD5
+  --color-secondary-light: color-mod(var(--color-secondary) tint(15%))
+  --color-secondary-dark: color-mod(var(--color-secondary) shade(10%))
+  --color-on-secondary: #FFFFFF
+
+  --color-background: #FFFFFF
+  --color-on-background: var(--color-text)
+
+  --color-surface: #FFFFFF
+  --color-on-surface: var(--color-text)
+
+  --black: #1d1d21
+  --gray-10: #2e2e31
+  --gray-6: #7b7a7d
+  --gray-4: #a5a5a6
+  --gray-3: #bbbbbc
+  --gray-2: #d1d0d2
+  --gray-1: #e8e7e8
+  --white: white
+
+  --color-success: #88c459
+  --color-error: #f5414f
+  --color-warning: #ffd137
+
+  --color-text: var(--gray-10)
+  --color-text-heading: var(--black)
+  --color-text-subtle: var(--gray-6)
+  --color-link: var(--color-primary)
+
+  --color-border: var(--gray-2)
+
+  --btn-primary-bg: var(--color-primary)
+  --btn-primary-hover: var(--color-primary-light)
+  --btn-primary-active: var(--color-primary-dark)
+  --btn-primary-label: var(--white)
+
+  --color-icon-primary: var(--gray-4)
+  --color-icon-secondary: inherit
+
+body
+  background-color: var(--color-background)
+  color: var(--color-on-background)
+
+  h1, h2, h3, h4, form legend
+    color: var(--color-text-heading)
+
+  a
+    color: var(--color-link)
+
+  button
+    background-color: var(--btn-primary-bg)
+    color: var(--btn-primary-label)
+
+    @include hover
+      background-color: var(--btn-primary-hover)
+
+  svg
+    color: var(--color-icon-primary)
+    fill: var(--color-icon-primary)

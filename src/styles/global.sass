@@ -1,10 +1,6 @@
-@import "variables"
-@import "typography"
-
 *,
 html,
 body
-  font-family: Outfit, sans-serif
   text-decoration: none
   box-sizing: border-box
   -webkit-font-smoothing: antialiased
@@ -28,29 +24,12 @@ dd
   padding: 0
   list-style: none
 
-
 button
   margin: 0 
   cursor: pointer
-  margin: 0
   text-decoration: none
   text-align: center
   background: none
-
-button,
-input,
-optgroup,
-select,
-textarea
-  display: inline-block
-  border: none
-  font-family: inherit
-  font-size: 100% 
-  line-height: 1.15 
-
-button,
-input
-  overflow: visible
 
 button,
 select
@@ -61,3 +40,10 @@ button,
 [type="reset"],
 [type="submit"]
   -webkit-appearance: button
+
+@import "mixins"
+@import "typography"
+@import "spacing"
+@import "colors"
+@import "transitions"
+@import "icons"

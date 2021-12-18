@@ -1,0 +1,56 @@
+@import "styles/mixins"
+
+$list-align-margin: 1.3em
+$list-counter-size: 2em
+$list-bg-color: rgb(127, 219, 213)
+  
+.container
+  max-width: 640px
+  margin: 0 auto
+
+.list
+  counter-reset: li
+  list-style: none
+
+  li:last-child
+    margin-bottom: 0
+
+.list_item
+  cursor: alias
+  margin-bottom: var(--space-xs)
+  
+.list_text
+  position: relative
+  display: block
+  padding-top: var(--space-sm)
+  padding-right: var(--space-xs)
+  padding-bottom: var(--space-sm)
+  padding-left: var(--space-lg)
+  background: rgba($list-bg-color, 0.4)
+  border-radius: var(--border-radius-primary)
+  transition: var(--transition-primary)
+
+  @include hover
+    background: rgba($list-bg-color, 0.8)
+
+  &::before
+    content: counter(li)
+    counter-increment: li
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    font-weight: bold
+    margin-top: -$list-align-margin
+    left: -$list-align-margin
+    top: 50%
+    background: var(--color-primary)
+    height: $list-counter-size
+    width: $list-counter-size
+    border: var(--space-xxs) solid var(--white)
+    border-radius: var(--border-radius-circle)
+    transition: var(--transition-primary)
+
+.text
+  margin: 0
