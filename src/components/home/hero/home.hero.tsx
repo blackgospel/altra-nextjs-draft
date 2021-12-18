@@ -4,11 +4,13 @@ import Navbar from 'components/global/navbar/index.navbar'
 import Spacing from 'components/global/spacing/index.spacing'
 import HomeHeroData from 'data/home/hero.json'
 import Image from 'next/image'
+import HeroBg from './bg/index.bg'
 import styles from './index.module.sass'
 
 const HomeHero = () => {
   return (
     <div className={styles.container}>
+      <HeroBg />
       <Navbar />
       <div className={styles.wrapper}>
         <h1 className={styles.title}>{HomeHeroData.title}</h1>
