@@ -63,8 +63,6 @@ interface CardProps {
   accent?: boolean
 }
 
-interface HomeProductCardProps {}
-
 interface TestimonialCardProps {
   name?: string
   role?: string

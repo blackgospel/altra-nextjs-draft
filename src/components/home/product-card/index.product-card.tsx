@@ -8,12 +8,12 @@ import HomeProductData from 'data/home/products.json'
 import Image from 'next/image'
 import styles from './index.module.sass'
 
-const ProductCard: React.FC<HomeProductCardProps> = () => {
+const ProductCard: React.FC = () => {
   return (
     <>
       {HomeProductData.map(({ title, description, list, color }, index) => {
         return (
-          <Section bubbleLeft1={index === 1}>
+          <Section key={`product-card-${title}`} bubbleLeft1={index === 1}>
             <div className={styles.container}>
               <div className={styles.wrapper}>
                 <Card
