@@ -9,7 +9,7 @@ import styles from './index.module.sass'
 
 const Customer: React.FC = () => {
   return (
-    <Section>
+    <Section bubbleRight>
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <span className={styles.quote_icon}>
