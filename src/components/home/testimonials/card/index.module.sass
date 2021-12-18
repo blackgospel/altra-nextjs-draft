@@ -1,0 +1,54 @@
+$background-surface-color: #FCF9F5
+$quote-size: 48px
+
+.container
+  border: 2px solid #f0ebe5
+  border-radius: var(--border-radius-primary)
+  color: var(--black)
+
+.wrapper
+  display: grid
+  grid-template-rows: minmax(0, auto) minmax(auto, 1fr) minmax(0, auto)
+  grid-gap: var(--space-lg)
+  padding: var(--space-lg)
+  height: 100%
+  background-color: $background-surface-color
+  
+.quote_box
+  display: block
+
+.quote
+  width: $quote-size
+  height: $quote-size
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: var(--color-primary)
+  border-radius: var(--border-radius-circle)
+
+  svg
+    color: var(--color-on-primary)
+
+.testimonial
+  display: inline-block
+  font-size: 130%
+  line-height: 1.6
+
+.clients
+  text-align: right
+
+  p
+    margin: 0
+
+  .client_name
+    color: var(--color-primary)
+    font-weight: bold
+    font-size: 110%
+
+  .client_role
+    font-weight: bold
+    font-size: 110%
+
+  .client_company
+    display: inline-block
+    font-size: 110%

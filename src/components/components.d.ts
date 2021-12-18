@@ -28,7 +28,8 @@ interface UseNavbarType {
 }
 
 interface SectionProps {
-  bubbleRight?: boolean
+  fullWidth?: boolean
+  lgWidth?: boolean
 }
 
 interface SpacingProps {
@@ -52,3 +53,10 @@ interface CardProps {
 }
 
 interface HomeProductCardProps {}
+
+interface TestimonialCardProps {
+  name?: string
+  role?: string
+  testimonial: string
+  company?: string
+}
