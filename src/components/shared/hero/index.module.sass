@@ -7,19 +7,14 @@ $hero-margin-bottom: 130px
   color: var(--color-on-primary)
   padding: var(--space-lg)
   max-width: var(--layout-container)
-  margin-bottom: $hero-margin-bottom
 
   @include media(sm)
     padding: var(--space-lg)
-    margin-bottom: calc($hero-margin-bottom + 5% * 1.5)
   
   @include media(md)
     border-radius: var(--border-radius-secondary)
     width: 94%
     margin: var(--space-lg) auto 0
-
-  @include media(xl)
-    margin-bottom: 300px
 
 .wrapper
   padding-top: var(--space-xxl)
@@ -52,6 +47,13 @@ $hero-margin-bottom: 130px
     margin: 0 auto
 
 .hero_lg_mb
+  margin-bottom: $hero-margin-bottom
+
+  @include media(sm)
+    margin-bottom: calc($hero-margin-bottom + 5% * 1.5)
 
   @include media(md)
     margin-bottom: calc($hero-margin-bottom + 7% * 1.5)
+
+  @include media(xl)
+    margin-bottom: 300px

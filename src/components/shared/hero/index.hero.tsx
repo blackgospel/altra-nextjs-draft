@@ -1,7 +1,7 @@
 import cn from 'classnames'
-import Button from '../button/index.button'
+import Button from 'components/global/button/index.button'
+import Spacing from 'components/global/spacing/index.spacing'
 import Navbar from '../navbar/index.navbar'
-import Spacing from '../spacing/index.spacing'
 import HeroBg from './bg/index.bg'
 import styles from './index.module.sass'
 
@@ -11,8 +11,10 @@ const Hero: React.FC<HeroProps> = ({
   title,
   description,
   buttonText,
+  buttonHref,
   buttonClick,
   heroMarginBottom,
+  color,
 }) => {
   return (
     <div
@@ -22,7 +24,7 @@ const Hero: React.FC<HeroProps> = ({
         { [styles.hero_lg_mb]: heroMarginBottom },
       ])}
     >
-      <HeroBg />
+      <HeroBg color={color} />
       <Navbar />
       <div className={styles.wrapper}>
         {title && <h1 className={styles.title}>{title}</h1>}
@@ -30,7 +32,12 @@ const Hero: React.FC<HeroProps> = ({
         <Spacing />
         {buttonText && (
           <div className={styles.button_wrapper}>
-            <Button secondary lg onClick={buttonClick}>
+            <Button
+              href={buttonHref}
+              secondary={color !== 'secondary'}
+              lg
+              onClick={buttonClick}
+            >
               {buttonText}
             </Button>
           </div>

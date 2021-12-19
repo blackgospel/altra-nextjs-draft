@@ -6,6 +6,9 @@
   background-color: #fff
   overflow: hidden
 
+  @include media(sm)
+    padding: var(--space-xl) var(--space-xl)
+
   @include media(md)
     padding: var(--space-xxl) var(--space-md)
 
@@ -40,4 +43,5 @@
   max-width: none
 
 .width_section_large
+  
   max-width: var(--layout-lg)

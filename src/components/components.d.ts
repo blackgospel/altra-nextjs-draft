@@ -76,7 +76,23 @@ interface HeroProps {
   className?: string
   buttonClick?: () => void
   buttonText?: string
+  buttonHref?: string
   title?: string
   description?: string
   heroMarginBottom?: boolean
+  color?: 'secondary' | 'accent'
+}
+
+interface HeroBgProps {
+  color?: 'secondary' | 'accent'
+}
+
+interface CompaniesProps {
+  readMoreButton?: boolean
+}
+
+interface CustomerStoriesCardType {
+  title?: string
+  story?: string
+  readMore?: boolean
 }

@@ -1,22 +1,16 @@
-import HeroImage from 'assets/images/home/hero-dashboard.png'
-import Hero from 'components/global/hero/index.hero'
-import HomeHeroData from 'data/home/hero.json'
-import Image from 'next/image'
-import styles from './index.module.sass'
+import Hero from 'components/shared/hero/index.hero'
+import CustomerHeroData from 'data/customers/hero.json'
+import SocialData from 'data/social-links.json'
 
 const CustomersHero = () => {
   return (
     <Hero
-      title={HomeHeroData.title}
-      description={HomeHeroData.description}
-      buttonText={HomeHeroData.button}
-    >
-      <div className={styles.image_wrapper}>
-        <div className={styles.image}>
-          <Image src={HeroImage} priority={true} />
-        </div>
-      </div>
-    </Hero>
+      title={CustomerHeroData.title}
+      description={CustomerHeroData.description}
+      buttonText={CustomerHeroData.button}
+      color="secondary"
+      buttonHref={SocialData.calendly}
+    />
   )
 }
 

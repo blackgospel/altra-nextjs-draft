@@ -5,8 +5,8 @@ import Logo from 'assets/images/logo-color.png'
 import FooterData from 'data/footer.json'
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from '../button/index.button'
-import Spacing from '../spacing/index.spacing'
+import Button from '../../global/button/index.button'
+import Spacing from '../../global/spacing/index.spacing'
 import styles from './index.module.sass'
 
 const Footer: React.FC = () => {

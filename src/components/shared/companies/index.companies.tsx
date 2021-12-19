@@ -6,19 +6,19 @@ import Company5 from 'assets/images/company/company-virtuecare.png'
 import Button from 'components/global/button/index.button'
 import Section from 'components/global/section/index.section'
 import Spacing from 'components/global/spacing/index.spacing'
-import HomeCompaniesData from 'data/home/companies.json'
+import CompaniesData from 'data/companies.json'
 import Image from 'next/image'
 import styles from './index.module.sass'
 
-const Companies: React.FC = () => {
+const Companies: React.FC<CompaniesProps> = ({ readMoreButton }) => {
   return (
     <Section lgWidth>
       <div className={styles.container}>
-        <h2 className={styles.title}>{HomeCompaniesData.title}</h2>
+        <h2 className={styles.title}>{CompaniesData.title}</h2>
 
         <Spacing />
 
-        <p className={styles.content}>{HomeCompaniesData.description}</p>
+        <p className={styles.content}>{CompaniesData.description}</p>
 
         <Spacing />
 
@@ -40,11 +40,15 @@ const Companies: React.FC = () => {
           </div>
         </div>
 
-        <Spacing />
+        {readMoreButton && (
+          <>
+            <Spacing />
 
-        <div className={styles.button_wrapper}>
-          <Button lg>{HomeCompaniesData.button}</Button>
-        </div>
+            <div className={styles.button_wrapper}>
+              <Button lg>{CompaniesData.button}</Button>
+            </div>
+          </>
+        )}
       </div>
     </Section>
   )
