@@ -4,6 +4,7 @@
 $logo-size: 96px
 $menu-icon-size: 24px
 $menu-border: 1px solid rgba(50, 49, 59, 0.1) 
+$menu-active-height: calc(243px + var(--space-sm))
 
 .container
   position: absolute
@@ -39,23 +40,23 @@ $menu-border: 1px solid rgba(50, 49, 59, 0.1)
     height: $menu-icon-size
 
 .mobile_navbar_wrapper 
-  transform: translateY(-100%)
-  opacity: 0
   height: 0
-  transition: height var(--transition-secondary), opacity 75ms ease-out, transform var(--transition-primary)
-  pointer-events: none
+  overflow: hidden
+  background-color: var(--white)
+  transition: height var(--transition-primary)
 
   &.active
-    height: 243px
-    transform: translateY(-0%)
-    opacity: 1
-    pointer-events: unset
+    height: $menu-active-height
+
+    .navbar_item
+      opacity: 1
+
 
   @include media(md)
     display: none
 
   .navbar_wrapper
-    // margin-top: var(--space-sm)
+    margin-top: var(--space-sm)
 
   .navbar_list
     display: flex
@@ -64,6 +65,9 @@ $menu-border: 1px solid rgba(50, 49, 59, 0.1)
   .navbar_item
     border-top: $menu-border
     padding: var(--space-sm) 0
+    opacity: 0
+    transition: opacity var(--transition-primary)
+    transition-delay: 100ms
 
     &:first-child
       border-top: 0
