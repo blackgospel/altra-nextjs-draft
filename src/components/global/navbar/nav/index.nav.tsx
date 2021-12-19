@@ -1,4 +1,5 @@
 import Button from 'components/global/button/index.button'
+import SocialLinks from 'data/social-links.json'
 import Link from 'next/link'
 import styles from '../index.module.sass'
 
@@ -10,18 +11,26 @@ const Nav = () => {
           <Link href="/">Home</Link>
         </li>
         <li className={styles.navbar_item}>
-          <Link href="/">Products</Link>
+          <Link href="/products">Products</Link>
         </li>
         <li className={styles.navbar_item}>
-          <Link href="/">Customers</Link>
+          <Link href="/customers">Customers</Link>
         </li>
         <li className={styles.navbar_item}>
-          <Button sm className={styles.navbar_button}>
+          <Button
+            sm
+            className={styles.navbar_button}
+            href={SocialLinks.calendly}
+          >
             Book Demo
           </Button>
         </li>
         <li className={styles.navbar_item}>
-          <Button sm className={styles.navbar_button}>
+          <Button
+            sm
+            className={styles.navbar_button}
+            href={SocialLinks.appLogin}
+          >
             Login
           </Button>
         </li>

@@ -55,6 +55,7 @@ interface ButtonProps {
   sm?: boolean
   lg?: boolean
   onClick?: () => void
+  href?: Url
 }
 
 interface CardProps {
