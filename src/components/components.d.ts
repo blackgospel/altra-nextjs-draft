@@ -54,6 +54,7 @@ interface ButtonProps {
   secondary?: boolean
   sm?: boolean
   lg?: boolean
+  onClick?: () => void
 }
 
 interface CardProps {
@@ -68,4 +69,13 @@ interface TestimonialCardProps {
   role?: string
   testimonial: string
   company?: string
+}
+
+interface HeroProps {
+  className?: string
+  buttonClick?: () => void
+  buttonText?: string
+  title?: string
+  description?: string
+  heroMarginBottom?: boolean
 }
