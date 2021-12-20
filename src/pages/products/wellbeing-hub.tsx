@@ -10,8 +10,7 @@ const WellbeingHub = () => {
     <Page title="Wellbeing Hub | Altra Products">
       <ProductsHero
         title="Your on demand wellbeing hub"
-        description="The tool to provide variety, consistency and expert quality to your wellbeing programmes. "
-        pageName="Wellbeing Hub"
+        description="The tool to provide variety, consistency and expert quality to your wellbeing programmes."
       />
       <WellbeingHubIntroduction />
       <ProductsDescription
