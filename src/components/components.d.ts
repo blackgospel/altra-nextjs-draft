@@ -8,7 +8,7 @@ interface ComponentProps {
 
 interface ListProps {
   title: string
-  list: string[]
+  list?: string[]
   accent?: boolean
   secondary?: boolean
 }
@@ -24,7 +24,18 @@ interface IconProps {
 
 interface UseNavbarType {
   active: boolean
+  subNavActive: boolean
+  handleSubNavToggleActive: () => void
   handleToggleActive: () => void
+}
+
+interface NavProps {
+  callback?: () => void
+  subNavActive?: boolean
+}
+
+interface UseNavType {
+  subNavRef: RefObject<HTMLDivElement>
 }
 
 interface NavMenuType {
@@ -95,4 +106,15 @@ interface CustomerStoriesCardType {
   title?: string
   story?: string
   readMore?: boolean
+}
+
+interface ProductsHeroProps {
+  title?: string
+  description?: string
+  pageName?: string
+}
+
+interface ProductsDescriptionProps {
+  title?: string
+  description?: string
 }

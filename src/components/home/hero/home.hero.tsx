@@ -5,7 +5,7 @@ import SocialData from 'data/social-links.json'
 import Image from 'next/image'
 import styles from './index.module.sass'
 
-const HomeHero = () => {
+const HomeHero: React.FC = () => {
   return (
     <Hero
       title={HomeHeroData.title}

@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           <div className={styles.button_wrapper}>
             <Button lg>
               {FooterData.demoButton}
-              <IconArrowRight style={{ marginLeft: 8 }} />
+              <IconArrowRight style={{ marginLeft: 6 }} />
             </Button>
           </div>
         </div>

@@ -4,7 +4,10 @@
 $logo-size: 96px
 $menu-icon-size: 24px
 $menu-border: 1px solid rgba(50, 49, 59, 0.1) 
-$menu-active-height: calc(252px + var(--space-sm))
+$menu-active-height: calc(297px + var(--space-sm))
+$submenu-active-height: 128px
+$menu-active-shadow:rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px
+$background-surface-color: #FCF9F5
 
 .container
   position: absolute
@@ -15,6 +18,7 @@ $menu-active-height: calc(252px + var(--space-sm))
   width: 93%
   margin: 0 auto
   z-index: 9
+  box-shadow: $menu-active-shadow
 
 .wrapper
   position: relative
@@ -50,6 +54,9 @@ $menu-active-height: calc(252px + var(--space-sm))
 
     .navbar_item
       opacity: 1
+
+  &.subnav_active
+    height: calc($menu-active-height + $submenu-active-height)
 
 
   @include media(md)
@@ -107,3 +114,110 @@ $menu-active-height: calc(252px + var(--space-sm))
   @include media(md)
     width: auto
   
+.item_align
+  display: flex
+  align-items: center
+  color: var(--black)
+  cursor: pointer
+  transition: var(--transition-primary)
+
+  svg
+    color: var(--black)
+    fill: transparent
+
+  @include hover
+    color: var(--color-primary)
+
+    svg
+      color: var(--color-primary)
+
+
+.sub_navbar_wrapper
+  display: none
+  height: 0
+  overflow: hidden
+  color: var(--black)
+  background-color: var(--white)
+  transition: height var(--transition-primary)
+
+  @include media(md)
+    display: block
+
+  &.active
+    height: 28px
+    margin: var(--space-lg) 0 var(--space-sm)
+
+  .sub_navbar_list
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+
+    .list_item
+      
+      span
+        display: flex
+        align-items: center
+        margin-left: var(--space-md)
+        font-weight: 500
+        color: var(--black)
+        cursor: pointer
+        transition: var(--transition-primary)
+
+        svg
+          transition: var(--transition-primary)
+          color: var(--black)
+
+        @include hover
+          color: var(--color-primary)
+          border-radius: var(--border-radius-primary)
+
+          svg
+            color: var(--color-primary)
+
+        @include media(md)
+          margin-left: var(--space-lg)
+
+        &:first-child
+          margin-left: 0
+
+.sub_navbar_mobile_wrapper
+  height: 0
+  overflow: hidden
+  color: var(--black)
+  background-color: $background-surface-color
+  transition: height var(--transition-primary)
+
+  @include media(md)
+    display: none
+
+  &.active
+    height: 128px
+
+  .sub_navbar_list
+    padding: var(--space-sm) 0
+    padding-left: var(--space-md)
+
+    .list_item
+      margin-bottom: var(--space-md)
+
+      &:last-child
+        margin-bottom: 0
+      
+      span
+        display: flex
+        align-items: center
+        font-weight: 500
+        color: var(--black)
+        cursor: pointer
+        transition: var(--transition-primary)
+
+        svg
+          transition: var(--transition-primary)
+          color: var(--black)
+          fill: transparent
+
+        @include hover
+          color: var(--color-primary)
+          border-radius: var(--border-radius-primary)
+
+          svg
+            color: var(--color-primary)
