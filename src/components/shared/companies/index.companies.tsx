@@ -14,7 +14,7 @@ const Companies: React.FC<CompaniesProps> = ({ readMoreButton }) => {
   return (
     <Section lgWidth>
       <div className={styles.container}>
-        <h2 className={styles.title}>{CompaniesData.title}</h2>
+        <h3 className={styles.title}>{CompaniesData.title}</h3>
 
         <Spacing />
 
@@ -45,7 +45,9 @@ const Companies: React.FC<CompaniesProps> = ({ readMoreButton }) => {
             <Spacing />
 
             <div className={styles.button_wrapper}>
-              <Button lg>{CompaniesData.button}</Button>
+              <Button href="customers" lg>
+                {CompaniesData.button}
+              </Button>
             </div>
           </>
         )}

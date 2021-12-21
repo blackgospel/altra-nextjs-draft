@@ -52,21 +52,21 @@ const Navbar: React.FC = () => {
         >
           <ul className={styles.sub_navbar_list}>
             <li className={styles.list_item}>
-              <Link href="/products/wellbeing-hub">
+              <Link href="products/wellbeing-hub">
                 <span>
                   Wellbeing Hub <IconArrowRight style={{ marginLeft: 4 }} />
                 </span>
               </Link>
             </li>
             <li className={styles.list_item}>
-              <Link href="/products/staff">
+              <Link href="products/staff">
                 <span>
                   Altra Staff <IconArrowRight style={{ marginLeft: 4 }} />
                 </span>
               </Link>
             </li>
             <li className={styles.list_item}>
-              <Link href="/products/family">
+              <Link href="products/family">
                 <span>
                   Altra Family <IconArrowRight style={{ marginLeft: 4 }} />
                 </span>

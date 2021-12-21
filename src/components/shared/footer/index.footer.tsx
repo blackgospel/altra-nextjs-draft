@@ -81,19 +81,19 @@ const Footer: React.FC = () => {
               <Link href="/">Home</Link>
             </li>
             <li className={styles.navbar_item}>
-              <Link href="/products/wellbeing-hub">Wellbeing Hub</Link>
+              <Link href="products/wellbeing-hub">Wellbeing Hub</Link>
             </li>
             <li className={styles.navbar_item}>
-              <Link href="/products/family">Family</Link>
+              <Link href="products/family">Family</Link>
             </li>
             <li className={styles.navbar_item}>
-              <Link href="/products/staff">Staff</Link>
+              <Link href="products/staff">Staff</Link>
             </li>
             <li className={styles.navbar_item}>
-              <Link href="/customers">Customers</Link>
+              <Link href="customers">Customers</Link>
             </li>
             <li className={styles.navbar_item}>
-              <Link href="/contact">Contact</Link>
+              <Link href="contact">Contact</Link>
             </li>
           </ul>
         </div>
