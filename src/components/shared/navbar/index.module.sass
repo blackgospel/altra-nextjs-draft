@@ -15,10 +15,16 @@ $background-surface-color: #FCF9F5
   transform: translateX(-50%)
   background-color: var(--color-surface)
   border-radius: var(--border-radius-primary)
-  width: 93%
+  width: 86%
   margin: 0 auto
   z-index: 9
   box-shadow: $menu-active-shadow
+
+  @include media(sm)
+    width: 84%
+
+  @include media(lg)
+    width: var(--layout-lg)
 
 .wrapper
   position: relative
