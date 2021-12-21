@@ -25,7 +25,9 @@ const Testimonials: React.FC = () => {
           <button className={styles.controls_button} onClick={handleNextSwipe}>
             <IconArrowRight />
           </button>
-          <Button>More customer stories</Button>
+          <div className={styles.button_wrapper}>
+            <Button secondary>More customer stories</Button>
+          </div>
         </div>
 
         <Spacing />
