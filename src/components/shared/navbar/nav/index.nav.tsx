@@ -11,9 +11,6 @@ const Nav: React.FC<NavProps> = ({ callback, subNavActive }) => {
     <div className={styles.navbar_wrapper}>
       <ul className={styles.navbar_list}>
         <li className={styles.navbar_item}>
-          <Link href="/">Home</Link>
-        </li>
-        <li className={styles.navbar_item}>
           <div onClick={callback} className={styles.item_align}>
             Products <IconChevronDown size={18} style={{ marginLeft: 4 }} />
           </div>

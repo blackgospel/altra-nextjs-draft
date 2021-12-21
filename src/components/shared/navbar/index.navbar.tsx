@@ -17,7 +17,9 @@ const Navbar: React.FC = () => {
       <div className={styles.wrapper}>
         <div className={styles.nav_wrapper}>
           <div className={styles.logo_wrapper}>
-            <Image src={Logo} />
+            <Link href="/">
+              <Image src={Logo} alt="Altra Logo" />
+            </Link>
           </div>
           <div className={styles.mobile_content}>
             <div className={styles.menu_icon}>
