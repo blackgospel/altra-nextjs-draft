@@ -24,7 +24,7 @@ const ProductCard: React.FC = () => {
                       accent: color === 'accent',
                     })}
                   >
-                    <h2 className={styles.headline}>{title}</h2>
+                    <h2 className={styles.title}>{title}</h2>
                     <p className={styles.subtitle}>{description}</p>
 
                     <Spacing />
