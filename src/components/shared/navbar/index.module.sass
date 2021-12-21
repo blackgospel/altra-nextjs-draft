@@ -150,14 +150,22 @@ $background-surface-color: #FCF9F5
     display: block
 
   &.active
-    height: 28px
-    margin: var(--space-lg) 0 var(--space-sm)
+    height: 48px
+
+    .sub_navbar_list
+
+      .list_item
+        opacity: 1
 
   .sub_navbar_list
     display: grid
     grid-template-columns: repeat(3, 1fr)
+    padding: var(--space-md) 0 var(--space-sm)
 
     .list_item
+      opacity: 0
+      transition: opacity var(--transition-primary)
+      transition-delay: 50ms
       
       span
         display: flex
