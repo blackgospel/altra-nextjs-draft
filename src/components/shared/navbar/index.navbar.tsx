@@ -54,21 +54,24 @@ const Navbar: React.FC = () => {
             <li className={styles.list_item}>
               <Link href="products/family">
                 <span>
-                  Altra Family <IconArrowRight style={{ marginLeft: 4 }} />
+                  Altra Family{' '}
+                  <IconArrowRight size={16} style={{ marginLeft: 4 }} />
                 </span>
               </Link>
             </li>
             <li className={styles.list_item}>
               <Link href="products/wellbeing-hub">
                 <span>
-                  Wellbeing Hub <IconArrowRight style={{ marginLeft: 4 }} />
+                  Wellbeing Hub{' '}
+                  <IconArrowRight size={16} style={{ marginLeft: 4 }} />
                 </span>
               </Link>
             </li>
             <li className={styles.list_item}>
               <Link href="products/staff">
                 <span>
-                  Altra Staff <IconArrowRight style={{ marginLeft: 4 }} />
+                  Altra Staff{' '}
+                  <IconArrowRight size={16} style={{ marginLeft: 4 }} />
                 </span>
               </Link>
             </li>

@@ -4,7 +4,7 @@
 $logo-size: 96px
 $menu-icon-size: 24px
 $menu-border: 1px solid rgba(50, 49, 59, 0.1) 
-$menu-active-height: calc(297px + var(--space-sm))
+$menu-active-height: calc(260px + var(--space-sm))
 $submenu-active-height: 128px
 $menu-active-shadow:rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px
 $background-surface-color: #FCF9F5
@@ -131,6 +131,7 @@ $background-surface-color: #FCF9F5
   svg
     color: var(--black)
     fill: transparent
+    margin-top: 3px
 
   @include hover
     color: var(--color-primary)
@@ -173,13 +174,14 @@ $background-surface-color: #FCF9F5
         align-items: center
         margin-left: var(--space-md)
         font-weight: 500
-        color: var(--black)
+        color: var(--color-accent)
         cursor: pointer
         transition: var(--transition-primary)
 
         svg
           transition: var(--transition-primary)
-          color: var(--black)
+          color: var(--color-accent)
+          margin-top: 1px
 
         @include hover
           color: var(--color-primary)
@@ -198,7 +200,6 @@ $background-surface-color: #FCF9F5
   height: 0
   overflow: hidden
   color: var(--black)
-  background-color: $background-surface-color
   transition: height var(--transition-primary)
 
   @include media(md)
