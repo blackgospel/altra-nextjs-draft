@@ -78,6 +78,9 @@ const Footer: React.FC = () => {
         <div className={styles.navbar_wrapper}>
           <ul className={styles.navbar_list}>
             <li className={styles.navbar_item}>
+              <Link href="/">Home</Link>
+            </li>
+            <li className={styles.navbar_item}>
               <Link href="/products/wellbeing-hub">Wellbeing Hub</Link>
             </li>
             <li className={styles.navbar_item}>
