@@ -1,0 +1,87 @@
+@import "styles/media"
+
+$avatar-size: 128px
+$separator-space: 4px
+$customer-border: 1px solid #EEEFEF
+
+.container
+  margin: 0 auto
+  border: $customer-border
+  border-left-width: 0
+  border-right-width: 0
+  border-top-width: 0
+  border-bottom-width: 0
+
+.wrapper
+  display: flex
+  flex-direction: column
+
+.quote_icon
+  text-align: center
+
+.grid_wrapper
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: var(--space-md)
+
+  @include media(md)
+    grid-template-columns: $avatar-size 1fr
+    grid-gap: var(--space-lg)
+
+.avatar
+  margin: 0 auto
+  width: $avatar-size
+  height: $avatar-size
+
+  @include media(md)
+    display: flex
+    align-items: center
+    justify-content: center
+  
+  img
+    max-width: 100%
+    border-radius: var(--border-radius-circle)
+
+.content
+
+  .testimonial
+    text-align: center
+    max-width: var(--layout-default)
+    margin: 0 auto
+    line-height: 1.6
+
+    @include media(md)
+      max-width: var(--layout-lg)
+      margin: 0
+      text-align: left
+
+  .info
+    
+    p
+      margin-top: 0
+      margin-bottom: 0
+
+  .info_name
+    text-align: center
+    font-weight: bold
+
+    @include media(md)
+      text-align: left
+
+  .info_org
+    display: flex
+    align-items: center
+    justify-content: center
+
+    @include media(md)
+      text-align: left
+      justify-content: unset
+
+  .info_role
+    display: inline-block
+
+  .separator
+    margin: 0 $separator-space
+
+  .info_company
+    display: inline-block

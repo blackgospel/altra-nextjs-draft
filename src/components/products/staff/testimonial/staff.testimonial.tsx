@@ -7,7 +7,7 @@ import HomeCustomerData from 'data/home/customer.json'
 import Image from 'next/image'
 import styles from './index.module.sass'
 
-const FamilyTestimonial: React.FC = () => {
+const StaffTestimonial: React.FC = () => {
   return (
     <Section bubbleRight1>
       <div className={styles.container}>
@@ -49,4 +49,4 @@ const FamilyTestimonial: React.FC = () => {
   )
 }
 
-export default FamilyTestimonial
+export default StaffTestimonial
