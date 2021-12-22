@@ -4,6 +4,7 @@ import Button from 'components/global/button/index.button'
 import SocialLinks from 'data/social-links.json'
 import Link from 'next/link'
 import React from 'react'
+import { AppRoutes } from 'routes/routes'
 import styles from '../index.module.sass'
 
 const Nav: React.FC<NavProps> = ({ callback, subNavActive }) => {

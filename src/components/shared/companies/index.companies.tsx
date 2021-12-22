@@ -8,6 +8,7 @@ import Section from 'components/global/section/index.section'
 import Spacing from 'components/global/spacing/index.spacing'
 import CompaniesData from 'data/companies.json'
 import Image from 'next/image'
+import { AppRoutes } from 'routes/routes'
 import styles from './index.module.sass'
 
 const Companies: React.FC<CompaniesProps> = ({ readMoreButton }) => {

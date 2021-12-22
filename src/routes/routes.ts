@@ -1,4 +1,4 @@
-enum AppRoutes {
+export enum AppRoutes {
   HOME = '/',
   WELLBEING_HUB = '/products/wellbeing-hub',
   FAMILY = '/products/family',
