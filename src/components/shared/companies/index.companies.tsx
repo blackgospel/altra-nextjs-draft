@@ -45,7 +45,7 @@ const Companies: React.FC<CompaniesProps> = ({ readMoreButton }) => {
             <Spacing />
 
             <div className={styles.button_wrapper}>
-              <Button href="customers" lg>
+              <Button href={AppRoutes.CUSTOMERS} lg>
                 {CompaniesData.button}
               </Button>
             </div>

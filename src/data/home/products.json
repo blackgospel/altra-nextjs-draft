@@ -8,7 +8,7 @@
       "Manage visits, showcase your activities and more."
     ],
     "color": "primary",
-    "link": "products/family"
+    "link": "/products/family"
   },
   {
     "title": "Wellbeing Hub",
@@ -19,7 +19,7 @@
       "Variety of content so there`s something to suit every resident."
     ],
     "color": "secondary",
-    "link": "products/wellbeing-hub"
+    "link": "/products/wellbeing-hub"
   },
   {
     "title": "Staff Communication",
@@ -30,6 +30,6 @@
       "Simple user experience for managers and staff making communication a breeze!"
     ],
     "color": "accent",
-    "link": "products/staff"
+    "link": "/products/staff"
   }
 ]

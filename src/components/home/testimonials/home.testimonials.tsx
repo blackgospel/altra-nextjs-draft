@@ -26,7 +26,7 @@ const Testimonials: React.FC = () => {
             <IconArrowRight />
           </button>
           <div className={styles.button_wrapper}>
-            <Button href="customers" secondary>
+            <Button href={AppRoutes.CUSTOMERS} secondary>
               More customer stories
             </Button>
           </div>

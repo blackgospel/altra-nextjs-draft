@@ -23,7 +23,7 @@ const Nav: React.FC<NavProps> = ({ callback, subNavActive }) => {
         >
           <ul className={styles.sub_navbar_list}>
             <li className={styles.list_item}>
-              <Link href="/products/wellbeing-hub">
+              <Link href={AppRoutes.WELLBEING_HUB}>
                 <span>
                   Wellbeing Hub{' '}
                   <IconChevronRight size={16} style={{ marginLeft: 4 }} />
@@ -31,7 +31,7 @@ const Nav: React.FC<NavProps> = ({ callback, subNavActive }) => {
               </Link>
             </li>
             <li className={styles.list_item}>
-              <Link href="/products/staff">
+              <Link href={AppRoutes.STAFF}>
                 <span>
                   Altra Staff{' '}
                   <IconChevronRight size={16} style={{ marginLeft: 4 }} />
@@ -39,7 +39,7 @@ const Nav: React.FC<NavProps> = ({ callback, subNavActive }) => {
               </Link>
             </li>
             <li className={styles.list_item}>
-              <Link href="/products/family">
+              <Link href={AppRoutes.FAMILY}>
                 <span>
                   Altra Family{' '}
                   <IconChevronRight size={16} style={{ marginLeft: 4 }} />
@@ -49,10 +49,10 @@ const Nav: React.FC<NavProps> = ({ callback, subNavActive }) => {
           </ul>
         </div>
         <li className={styles.navbar_item}>
-          <Link href="/customers">Customers</Link>
+          <Link href={AppRoutes.CUSTOMERS}>Customers</Link>
         </li>
         <li className={styles.navbar_item}>
-          <Link href="/contact">Contact</Link>
+          <Link href={AppRoutes.CONTACT}>Contact</Link>
         </li>
         <li className={styles.navbar_item}>
           <Button

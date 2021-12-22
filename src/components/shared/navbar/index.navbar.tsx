@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
       <div className={styles.wrapper}>
         <div className={styles.nav_wrapper}>
           <div className={styles.logo_wrapper}>
-            <Link href="/">
+            <Link href={AppRoutes.HOME}>
               <Image src={Logo} alt="Altra Logo" />
             </Link>
           </div>
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
         >
           <ul className={styles.sub_navbar_list}>
             <li className={styles.list_item}>
-              <Link href="products/family">
+              <Link href={AppRoutes.FAMILY}>
                 <span>
                   Altra Family{' '}
                   <IconArrowRight size={16} style={{ marginLeft: 4 }} />
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <li className={styles.list_item}>
-              <Link href="products/wellbeing-hub">
+              <Link href={AppRoutes.WELLBEING_HUB}>
                 <span>
                   Wellbeing Hub{' '}
                   <IconArrowRight size={16} style={{ marginLeft: 4 }} />
@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <li className={styles.list_item}>
-              <Link href="products/staff">
+              <Link href={AppRoutes.STAFF}>
                 <span>
                   Altra Staff{' '}
                   <IconArrowRight size={16} style={{ marginLeft: 4 }} />

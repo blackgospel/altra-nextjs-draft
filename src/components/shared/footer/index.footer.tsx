@@ -78,22 +78,22 @@ const Footer: React.FC = () => {
         <div className={styles.navbar_wrapper}>
           <ul className={styles.navbar_list}>
             <li className={styles.navbar_item}>
-              <Link href="/">Home</Link>
+              <Link href={AppRoutes.HOME}>Home</Link>
             </li>
             <li className={styles.navbar_item}>
-              <Link href="products/wellbeing-hub">Wellbeing Hub</Link>
+              <Link href={AppRoutes.WELLBEING_HUB}>Wellbeing Hub</Link>
             </li>
             <li className={styles.navbar_item}>
-              <Link href="products/family">Family</Link>
+              <Link href={AppRoutes.FAMILY}>Family</Link>
             </li>
             <li className={styles.navbar_item}>
-              <Link href="products/staff">Staff</Link>
+              <Link href={AppRoutes.STAFF}>Staff</Link>
             </li>
             <li className={styles.navbar_item}>
-              <Link href="customers">Customers</Link>
+              <Link href={AppRoutes.CUSTOMERS}>Customers</Link>
             </li>
             <li className={styles.navbar_item}>
-              <Link href="contact">Contact</Link>
+              <Link href={AppRoutes.CONTACT}>Contact</Link>
             </li>
           </ul>
         </div>
