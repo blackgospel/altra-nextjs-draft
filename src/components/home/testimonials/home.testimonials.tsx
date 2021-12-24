@@ -27,7 +27,7 @@ const Testimonials: React.FC = () => {
             <IconArrowRight />
           </button>
           <div className={styles.button_wrapper}>
-            <Button href={AppRoutes.CUSTOMERS} secondary>
+            <Button href={AppRoutes.CUSTOMERS} color="secondary">
               More customer stories
             </Button>
           </div>
@@ -50,13 +50,18 @@ const Testimonials: React.FC = () => {
           }}
           onSwiper={(swiper) => handleSetSwiper(swiper)}
         >
-          {TestimonialsData.map(({ name, role, testimonial, company }) => {
-            return (
-              <SwiperSlide key={name}>
-                <TestimonialCard {...{ name, role, testimonial, company }} />
-              </SwiperSlide>
-            )
-          })}
+          {TestimonialsData.map(
+            ({ name, role, testimonial, company }, index) => {
+              return (
+                <SwiperSlide key={name}>
+                  <TestimonialCard
+                    {...{ name, role, testimonial, company }}
+                    index={index}
+                  />
+                </SwiperSlide>
+              )
+            }
+          )}
         </Swiper>
       </div>
     </Section>

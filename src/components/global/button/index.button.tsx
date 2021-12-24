@@ -5,45 +5,35 @@ import styles from './index.module.sass'
 const Button: React.FC<ButtonProps> = ({
   children,
   className,
-  secondary,
+  color,
+  textColor,
   sm,
   lg,
   href,
   onClick,
 }) => {
+  const buttonClassNames = cn([
+    styles.container,
+    className,
+    {
+      [styles.secondary]: color === 'secondary',
+      [styles.white]: color === 'white',
+      [styles.small]: sm,
+      [styles.large]: lg,
+      ...(textColor && { [styles[`text-${textColor}`]]: true }),
+    },
+  ])
+
   if (href) {
     return (
       <Link href={href}>
-        <button
-          className={cn([
-            styles.container,
-            className,
-            {
-              [styles.secondary]: secondary,
-              [styles.small]: sm,
-              [styles.large]: lg,
-            },
-          ])}
-        >
-          {children}
-        </button>
+        <button className={buttonClassNames}>{children}</button>
       </Link>
     )
   }
 
   return (
-    <button
-      className={cn([
-        styles.container,
-        className,
-        {
-          [styles.secondary]: secondary,
-          [styles.small]: sm,
-          [styles.large]: lg,
-        },
-      ])}
-      onClick={onClick}
-    >
+    <button className={buttonClassNames} onClick={onClick}>
       {children}
     </button>
   )

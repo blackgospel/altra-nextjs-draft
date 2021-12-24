@@ -1,4 +1,4 @@
-import HeroImage from 'assets/images/home/hero-dashboard.png'
+import HeroImage from 'assets/images/home/hero-family.png'
 import Hero from 'components/shared/hero/index.hero'
 import HomeHeroData from 'data/home/hero.json'
 import SocialData from 'data/social-links.json'
@@ -15,9 +15,7 @@ const HomeHero: React.FC = () => {
       buttonHref={SocialData.calendly}
     >
       <div className={styles.image_wrapper}>
-        <div className={styles.image}>
-          <Image src={HeroImage} priority={true} />
-        </div>
+        <Image src={HeroImage} priority={true} />
       </div>
     </Hero>
   )

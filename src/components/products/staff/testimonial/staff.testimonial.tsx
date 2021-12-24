@@ -24,21 +24,20 @@ const StaffTestimonial: React.FC = () => {
             </div>
             <div className={styles.content}>
               <p className={styles.testimonial}>
-                {HomeCustomerData.testimonial}
+                I see huge improvements with very little effort from managers.
+                It allows them to focus their time on clinical governance
               </p>
 
               <Spacing sm />
 
               <div className={styles.info}>
-                <p className={styles.info_name}>{HomeCustomerData.name}</p>
+                <p className={styles.info_name}>Miracline Samuel</p>
                 <div className={styles.info_org}>
-                  <p className={styles.info_role}>{HomeCustomerData.role}</p>
+                  <p className={styles.info_role}>Director of Nursing</p>
                   <p className={styles.separator}>
                     {HomeCustomerData.separator}
                   </p>
-                  <p className={styles.info_company}>
-                    {HomeCustomerData.company}
-                  </p>
+                  <p className={styles.info_company}>TLC</p>
                 </div>
               </div>
             </div>

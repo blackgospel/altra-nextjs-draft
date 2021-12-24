@@ -1,6 +1,6 @@
 @import "styles/media"
 
-$hero-margin-bottom: 130px
+$hero-margin-bottom: 60px
 
 .container
   position: relative
@@ -49,11 +49,5 @@ $hero-margin-bottom: 130px
 .hero_lg_mb
   margin-bottom: $hero-margin-bottom
 
-  @include media(sm)
-    margin-bottom: calc($hero-margin-bottom + 5% * 1.5)
-
-  @include media(md)
-    margin-bottom: calc($hero-margin-bottom + 7% * 1.5)
-
-  @include media(xl)
-    margin-bottom: 250px
+  @include media(lg)
+    margin-bottom: calc($hero-margin-bottom + 40px)

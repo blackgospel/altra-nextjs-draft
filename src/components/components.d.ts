@@ -1,3 +1,25 @@
+type ButtonColors = 'secondary' | 'accent' | 'white'
+
+type ButtonTextColors = 'primary' | 'secondary' | 'accent' | 'white' | 'black'
+
+type HeroColors =
+  | 'primary'
+  | 'secondary'
+  | 'accent'
+  | 'red'
+  | 'violet'
+  | 'green'
+
+type ListColors =
+  | 'primary'
+  | 'secondary'
+  | 'accent'
+  | 'on_primary'
+  | 'on_secondary'
+  | 'on_accent'
+
+type IconSizes = 'xs' | 'sm' | 'md' | 'lg'
+
 interface PageProps {
   title?: string
 }
@@ -9,11 +31,10 @@ interface ComponentProps {
 interface ListProps {
   title: string
   list?: string[]
-  accent?: boolean
-  secondary?: boolean
+  serif?: boolean
+  color?: ListColors
+  fullWidth?: boolean
 }
-
-type IconSizes = 'xs' | 'sm' | 'md' | 'lg'
 
 interface IconProps {
   icon: JSX.Element
@@ -62,7 +83,8 @@ interface SpacingProps {
 
 interface ButtonProps {
   className?: string
-  secondary?: boolean
+  color?: ButtonColors
+  textColor?: ButtonTextColors
   sm?: boolean
   lg?: boolean
   onClick?: () => void
@@ -81,6 +103,7 @@ interface TestimonialCardProps {
   role?: string
   testimonial: string
   company?: string
+  index: number
 }
 
 interface HeroProps {
@@ -91,11 +114,12 @@ interface HeroProps {
   title?: string
   description?: string
   heroMarginBottom?: boolean
-  color?: 'secondary' | 'accent'
+  buttonColor?: ButtonColors
+  heroColor?: HeroColors
 }
 
 interface HeroBgProps {
-  color?: 'secondary' | 'accent'
+  color?: HeroColors
 }
 
 interface CompaniesProps {
@@ -108,13 +132,14 @@ interface CustomerStoriesCardType {
   readMore?: boolean
 }
 
-interface ProductsHeroProps {
-  title?: string
-  description?: string
-  pageName?: string
-}
-
 interface ProductsDescriptionProps {
   title?: string
   description?: string
+  image?: string | StaticImageData
+  color?: 'violet' | 'red' | 'green'
+  reverse?: boolean
+}
+
+interface SplitLayoutProps {
+  reverse?: boolean
 }

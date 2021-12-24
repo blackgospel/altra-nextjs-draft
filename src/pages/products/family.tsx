@@ -9,7 +9,10 @@ import Footer from 'components/shared/footer/index.footer'
 const Family = () => {
   return (
     <Page title="Family | Altra Products">
-      <ProductsHero title="Improve connectedness of residents, families and your team" />
+      <ProductsHero
+        title="Improve connectedness of residents, families and your team"
+        heroColor="green"
+      />
       <FamilyIntroduction />
       <FamilyTestimonial />
       <FamilyBenefits />

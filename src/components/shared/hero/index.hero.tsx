@@ -14,7 +14,8 @@ const Hero: React.FC<HeroProps> = ({
   buttonHref,
   buttonClick,
   heroMarginBottom,
-  color,
+  buttonColor = 'white',
+  heroColor,
 }) => {
   return (
     <div
@@ -24,7 +25,7 @@ const Hero: React.FC<HeroProps> = ({
         { [styles.hero_lg_mb]: heroMarginBottom },
       ])}
     >
-      <HeroBg color={color} />
+      <HeroBg color={heroColor} />
       <Navbar />
       <div className={styles.wrapper}>
         {title && <h1 className={styles.title}>{title}</h1>}
@@ -34,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({
           <div className={styles.button_wrapper}>
             <Button
               href={buttonHref}
-              secondary={color !== 'secondary'}
+              color={buttonColor}
               lg
               onClick={buttonClick}
             >

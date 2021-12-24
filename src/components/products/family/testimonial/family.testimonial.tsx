@@ -24,21 +24,20 @@ const FamilyTestimonial: React.FC = () => {
             </div>
             <div className={styles.content}>
               <p className={styles.testimonial}>
-                {HomeCustomerData.testimonial}
+                You can`t put a price on the smiles on the faces of residents
+                when they see these pictures and comments from their families
               </p>
 
               <Spacing sm />
 
               <div className={styles.info}>
-                <p className={styles.info_name}>{HomeCustomerData.name}</p>
+                <p className={styles.info_name}>Keith Milton</p>
                 <div className={styles.info_org}>
-                  <p className={styles.info_role}>{HomeCustomerData.role}</p>
+                  <p className={styles.info_role}>CEO</p>
                   <p className={styles.separator}>
                     {HomeCustomerData.separator}
                   </p>
-                  <p className={styles.info_company}>
-                    {HomeCustomerData.company}
-                  </p>
+                  <p className={styles.info_company}>St Martins Care</p>
                 </div>
               </div>
             </div>

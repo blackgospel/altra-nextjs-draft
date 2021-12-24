@@ -1,4 +1,5 @@
 import List from 'components/global/list/index.list'
+import Spacing from 'components/global/spacing/index.spacing'
 import CenteredLayout from 'components/shared/layouts/index.centered'
 import styles from './index.module.sass'
 
@@ -13,6 +14,8 @@ const FamilySection4: React.FC = () => {
           giving everyone the information they need - anytime, anywhere.
         </p>
       </div>
+
+      <Spacing sm />
 
       <List
         title="family-section-4-list"

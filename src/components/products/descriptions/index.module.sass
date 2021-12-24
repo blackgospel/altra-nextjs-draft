@@ -1,5 +1,59 @@
+@import "styles/media"
+
+.wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 100%
+  max-width: var(--layout-mobile)
+  margin: 0 auto
+
+  @include media(md)
+    max-width: none
+    margin: unset
+
+.title
+  text-align: center
+
+  @include media(md)
+    text-align: left
+
+.description
+  text-align: center
+
+  @include media(md)
+    text-align: left
+  
 .image_wrapper
   display: flex
   align-items: center
   justify-content: center
   height: 100%
+  max-width: var(--layout-mobile)
+  margin: 0 auto
+  border-radius: var(--border-radius-primary)
+  padding: var(--space-md)
+
+  img
+    border-radius: var(--border-radius-primary)
+
+  @include media(md)
+    max-width: none
+
+.primary
+  background-color: var(--color-primary-light)
+
+.secondary
+  background-color: var(--color-secondary-light)
+
+.accent
+  background-color: var(--color-accent-light)
+
+.violet
+  background-color: var(--color-violet-light)
+
+.red
+  background-color: var(--color-red-light)
+
+.green
+  background-color: var(--color-green-light)

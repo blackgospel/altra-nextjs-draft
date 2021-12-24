@@ -24,6 +24,7 @@ $customer-border: 1px solid #EEEFEF
   display: grid
   grid-template-columns: 1fr
   grid-gap: var(--space-md)
+  align-items: center
 
   @include media(md)
     grid-template-columns: $avatar-size 1fr
@@ -49,7 +50,9 @@ $customer-border: 1px solid #EEEFEF
     text-align: center
     max-width: var(--layout-default)
     margin: 0 auto
-    line-height: 1.6
+    line-height: 1.9
+    font-size: var(--text-md)
+    font-family: var(--font-secondary)
 
     @include media(md)
       max-width: var(--layout-lg)

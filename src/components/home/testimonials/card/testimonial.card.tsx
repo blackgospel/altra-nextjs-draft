@@ -1,4 +1,5 @@
 import { IconBlockquote } from '@tabler/icons'
+import cn from 'classnames'
 import styles from './index.module.sass'
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
@@ -6,6 +7,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   role,
   testimonial,
   company,
+  index,
 }) => {
   return (
     <div className={styles.container}>
@@ -15,7 +17,14 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
             <IconBlockquote />
           </div>
         </div>
-        <div className={styles.testimonial}>{testimonial}</div>
+        <div
+          className={cn([
+            styles.testimonial,
+            { [styles.serif]: index % 2 === 0 },
+          ])}
+        >
+          {testimonial}
+        </div>
         <div className={styles.clients}>
           {name && <p className={styles.client_name}>{name}</p>}
           {role && <p className={styles.client_role}>{role}</p>}

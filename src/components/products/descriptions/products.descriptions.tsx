@@ -1,4 +1,4 @@
-import HeroDashboard from 'assets/images/home/hero-dashboard.png'
+import classNames from 'classnames'
 import Spacing from 'components/global/spacing/index.spacing'
 import SplitLayout from 'components/shared/layouts/index.split'
 import Image from 'next/image'
@@ -8,23 +8,31 @@ const ProductsDescription: React.FC<ProductsDescriptionProps> = ({
   title,
   description,
   children,
+  image,
+  color = 'violet',
+  reverse,
 }) => {
   return (
-    <SplitLayout>
+    <SplitLayout reverse={reverse}>
       <div className={styles.wrapper}>
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.description}>{description}</p>
 
         {children && (
           <>
-            <Spacing />
+            <Spacing sm />
 
             {children}
           </>
         )}
       </div>
-      <div className={styles.image_wrapper}>
-        <Image src={HeroDashboard} alt="Hero dashboard" />
+      <div
+        className={classNames([
+          styles.image_wrapper,
+          { ...(color && { [styles[color]]: true }) },
+        ])}
+      >
+        {image && <Image src={image} alt="Hero dashboard" />}
       </div>
     </SplitLayout>
   )

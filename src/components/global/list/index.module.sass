@@ -2,23 +2,31 @@
 
 $list-align-margin: 1.3em
 $list-counter-size: 2em
-$list-bg-primary: rgb(127, 219, 213)
-$list-bg-secondary: rgb(75, 186, 221)
-$list-bg-accent: rgb(11, 49, 61)
+$list-bg-primary: #7fdbd5
+$list-bg-secondary: #4bbadd
+$list-bg-accent: #0b313d
+$list-bg-on-primary: #d57fdb
+$list-bg-on-secondary: #DD4BBA
+$list-bg-on-accent: #3D0B31
   
 .container
   max-width: var(--layout-sm)
   margin: 0 auto
 
+  &.full_width
+    max-width: none
+    margin: unset
+
 .list
   counter-reset: li
   list-style: none
+  margin: 0 $list-align-margin
 
   li:last-child
     margin-bottom: 0
 
 .list_item
-  cursor: alias
+  cursor: default
   margin-bottom: var(--space-xs)
   
 .list_text
@@ -28,12 +36,11 @@ $list-bg-accent: rgb(11, 49, 61)
   padding-right: var(--space-xs)
   padding-bottom: var(--space-sm)
   padding-left: var(--space-lg)
-  background: rgba($list-bg-primary, 0.4)
   border-radius: var(--border-radius-primary)
   transition: var(--transition-primary)
 
-  @include hover
-    background: rgba($list-bg-primary, 0.8)
+  &.serif
+    font-family: var(--font-secondary)
 
   &::before
     content: counter(li)
@@ -57,24 +64,76 @@ $list-bg-accent: rgb(11, 49, 61)
 .text
   margin: 0
 
+.primary
+
+  .list_text
+    background: rgba($list-bg-primary, 0.7)
+    color: var(--black)
+
+    @include hover
+      background: rgba($list-bg-primary, 0.95)
+
+    &::before
+      background: var(--color-primary)
+      color: var(--black)
+
 .secondary
 
   .list_text
-    background: rgba($list-bg-secondary, 0.4)
+    background: rgba($list-bg-secondary, 0.7)
+    color: var(--black)
 
     @include hover
-      background: rgba($list-bg-secondary, 0.8)
+      background: rgba($list-bg-secondary, 0.95)
 
     &::before
       background: var(--color-secondary)
+      color: var(--black)
 
 .accent
 
   .list_text
-    background: rgba($list-bg-accent, 0.4)
+    background: rgba($list-bg-accent, 0.7)
+    color: var(--white)
 
     @include hover
-      background: rgba($list-bg-accent, 0.8)
+      background: rgba($list-bg-accent, 0.95)
 
     &::before
       background: var(--color-accent)
+      color: var(--white)
+
+.on_primary
+
+  .list_text
+    background: rgba($list-bg-on-primary, 0.7)
+
+    @include hover
+      background: rgba($list-bg-on-primary, 0.95)
+
+    &::before
+      background: $list-bg-on-primary
+
+.on_secondary
+
+  .list_text
+    background: rgba($list-bg-on-secondary, 0.7)
+
+    @include hover
+      background: rgba($list-bg-on-secondary, 0.95)
+
+    &::before
+      background: $list-bg-on-secondary
+
+.on_accent
+
+  .list_text
+    background: rgba($list-bg-on-accent, 0.7)
+    color: var(--white)
+
+    @include hover
+      background: rgba($list-bg-on-accent, 0.95)
+
+    &::before
+      background: $list-bg-on-accent
+      color: var(--white)

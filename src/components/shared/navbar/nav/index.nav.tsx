@@ -24,6 +24,14 @@ const Nav: React.FC<NavProps> = ({ callback, subNavActive }) => {
         >
           <ul className={styles.sub_navbar_list}>
             <li className={styles.list_item}>
+              <Link href={AppRoutes.FAMILY}>
+                <span>
+                  Altra Family{' '}
+                  <IconChevronRight size={16} style={{ marginLeft: 4 }} />
+                </span>
+              </Link>
+            </li>
+            <li className={styles.list_item}>
               <Link href={AppRoutes.WELLBEING_HUB}>
                 <span>
                   Wellbeing Hub{' '}
@@ -35,14 +43,6 @@ const Nav: React.FC<NavProps> = ({ callback, subNavActive }) => {
               <Link href={AppRoutes.STAFF}>
                 <span>
                   Altra Staff{' '}
-                  <IconChevronRight size={16} style={{ marginLeft: 4 }} />
-                </span>
-              </Link>
-            </li>
-            <li className={styles.list_item}>
-              <Link href={AppRoutes.FAMILY}>
-                <span>
-                  Altra Family{' '}
                   <IconChevronRight size={16} style={{ marginLeft: 4 }} />
                 </span>
               </Link>

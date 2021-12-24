@@ -25,6 +25,13 @@
   @include hover
     background-color: var(--color-secondary-dark)
 
+.white
+  background-color: var(--color-surface)
+  color: var(--color-primary)
+
+  @include hover
+    background-color: var(--color-surface-light)
+
 .small
   padding: var(--space-xs) var(--space-sm)
 
@@ -34,3 +41,18 @@
 
   @include media(sm)
     padding: var(--space-sm) var(--space-xl)
+
+.text-white
+  color: var(--white)
+
+.text-black
+  color: var(--black)
+
+.text-primary
+  color: var(--color-primary)
+
+.text-secondary
+  color: var(--color-secondary)
+
+.text-accent
+  color: var(--color-accent)

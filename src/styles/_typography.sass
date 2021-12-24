@@ -1,6 +1,6 @@
 :root
   --font-primary: Outfit, sans-serif
-  --font-secondary: serif
+  --font-secondary: Roboto Slab, serif
 
   --text-base-size: 1em
   --text-scale-ratio: 1.2
@@ -29,6 +29,12 @@ h1, h2, h3, h4, form legend
   margin-top: 0
   margin-bottom: var(--space-xxs)
   line-height: var(--heading-line-height)
+
+h1, h2, h3, h4, p, a, strong, span
+
+  &.serif
+    font-family: var(--font-secondary)
+
 
 h1
   font-size: var(--text-xxxl)

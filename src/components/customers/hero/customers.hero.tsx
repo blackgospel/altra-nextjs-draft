@@ -8,7 +8,7 @@ const CustomersHero = () => {
       title={CustomerHeroData.title}
       description={CustomerHeroData.description}
       buttonText={CustomerHeroData.button}
-      color="secondary"
+      heroColor="secondary"
       buttonHref={SocialData.calendly}
     />
   )

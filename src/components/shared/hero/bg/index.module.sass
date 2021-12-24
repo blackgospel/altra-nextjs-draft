@@ -1,4 +1,6 @@
 @import "styles/media"
+
+$box-size: 10px
   
 @keyframes cube
   from
@@ -9,7 +11,7 @@
     transform: scale(20) rotate(960deg) translate(-50%, -50%)
     opacity: 0
 
-.background
+.container
   position: absolute
   width: 100%
   height: 100%
@@ -17,7 +19,6 @@
   left: 0
   margin: 0
   padding: 0
-  background: var(--color-primary)
   z-index: -1
   overflow: hidden
 
@@ -26,51 +27,88 @@
 
   li
     position: absolute
-    top: 80vh
-    left: 45vw
-    width: 10px
-    height: 10px
-    border: solid 1px #43a7c6
+    top: 10%
+    left: 90%
+    width: $box-size
+    height: $box-size
+    border: 1px solid var(--color-primary-light)
     color: transparent
     transform-origin: top left
     transform: scale(0) rotate(0deg) translate(-50%, -50%)
     animation: cube 7s ease-in forwards infinite
 
     &:nth-child(0)
-      animation-delay: 0s
-      left: 91vw
-      top: 89vh
+      left: 91%
+      top: 89%
 
     &:nth-child(1)
       animation-delay: 1s
-      left: 68vw
-      top: 81vh
+      left: 90%
+      top: 45%
 
     &:nth-child(2)
       animation-delay: 2s
-      left: 20vw
-      top: 20vh
-      border-color: #52ccf3
-
-    &:nth-child(3)
-      animation-delay: 3s
-      left: 33vw
-      top: 50vh
+      left: 17%
+      top: 20%
 
     &:nth-child(4)
       animation-delay: 4s
-      left: 59vw
-      top: 40vh
-      border-color: #52ccf3
+      left: 48%
+      top: 40%
 
-    &:nth-child(5)
-      animation-delay: 5s
-      left: 10vw
-      top: 9vh
-      border-color: #52ccf3
+.primary
+  background: var(--color-primary)
+
+  li
+    border-color: var(--color-primary-light)
+
+    &:nth-child(2), &:nth-child(4) 
+      border-color: var(--color-primary-dark)
+
 
 .secondary
   background: var(--color-secondary)
 
+  li
+    border-color: var(--color-secondary-light)
+
+    &:nth-child(2), &:nth-child(4) 
+      border-color: var(--color-secondary-light)
+
 .accent
   background: var(--color-accent)
+
+  li
+    border-color: var(--color-accent-light)
+
+    &:nth-child(2), &:nth-child(4) 
+      border-color: var(--color-accent-dark)
+
+.red
+  background: var(--color-red-light)
+
+  li
+    border-color: var(--color-red-light)
+
+    &:nth-child(2), &:nth-child(4) 
+      border-color: var(--color-red-dark)
+
+.violet
+  background: var(--color-violet-light)
+
+  li
+    border-color: var(--color-violet-light)
+
+    &:nth-child(2), &:nth-child(4) 
+      border-color: var(--color-violet-dark)
+
+.green
+  background: var(--color-green-light)
+
+  li
+    border-color: var(--color-green-light)
+
+    &:nth-child(2), &:nth-child(4) 
+      border-color: var(--color-green-dark)
+
+  
