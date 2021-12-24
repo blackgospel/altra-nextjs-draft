@@ -149,3 +149,19 @@ $list-bg-on-accent: #3D0B31
     &::before
       background: $list-bg-on-accent
       color: var(--white)
+
+.on_surface
+
+  .list_text
+    background: rgba($list-bg-primary, 0.7)
+    color: var(--black)
+
+    h1, h2, h3, h4, strong
+      color: var(--black)
+
+    @include hover
+      background: rgba($list-bg-primary, 0.95)
+
+    &::before
+      background: $list-bg-primary
+      color: var(--black)

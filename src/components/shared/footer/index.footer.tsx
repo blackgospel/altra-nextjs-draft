@@ -3,6 +3,7 @@ import FlagIreland from 'assets/images/footer/irish-flag.png'
 import FlagUSA from 'assets/images/footer/usa-flag.png'
 import Logo from 'assets/images/logo-color.png'
 import FooterData from 'data/footer.json'
+import SocialLinks from 'data/social-links.json'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AppRoutes } from 'routes/routes'
@@ -26,7 +27,7 @@ const Footer: React.FC = () => {
             <p className={styles.content}>{FooterData.demoMission}</p>
           </div>
           <div className={styles.button_wrapper}>
-            <Button lg>
+            <Button href={SocialLinks.appLogin} lg>
               {FooterData.demoButton}
               <IconArrowRight style={{ marginLeft: 6 }} />
             </Button>

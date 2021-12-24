@@ -18,6 +18,7 @@ const FamilySection4: React.FC = () => {
       <Spacing sm />
 
       <List
+        color="on_surface"
         title="family-section-4-list"
         list={[
           'Add resident details. From your care management system or wherever you store details)',

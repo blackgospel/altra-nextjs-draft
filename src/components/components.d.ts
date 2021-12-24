@@ -17,6 +17,7 @@ type ListColors =
   | 'on_primary'
   | 'on_secondary'
   | 'on_accent'
+  | 'on_surface'
 
 type IconSizes = 'xs' | 'sm' | 'md' | 'lg'
 

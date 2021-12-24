@@ -21,7 +21,11 @@ const ChooseUs: React.FC = () => {
 
         <Spacing />
 
-        <List title="choose-us" list={HomeChooseUsData.list} />
+        <List
+          color="on_surface"
+          title="choose-us"
+          list={HomeChooseUsData.list}
+        />
 
         <Spacing />
 
