@@ -14,15 +14,19 @@ const Stories: React.FC = () => {
         <Spacing />
 
         <div className={styles.customer_stories}>
-          {TestimonialsData.map(({ name, testimonial }, index) => {
-            return (
-              <StoriesCard
-                key={`customer-stories-${index}`}
-                title={name}
-                story={testimonial}
-              />
-            )
-          })}
+          {TestimonialsData.map(
+            ({ name, testimonial, role, company }, index) => {
+              return (
+                <StoriesCard
+                  key={`customer-stories-${index}`}
+                  title={name}
+                  story={testimonial}
+                  role={role}
+                  company={company}
+                />
+              )
+            }
+          )}
         </div>
       </div>
     </Section>

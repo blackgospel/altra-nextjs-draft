@@ -2,7 +2,7 @@ import cn from 'classnames'
 import Button from 'components/global/button/index.button'
 import Spacing from 'components/global/spacing/index.spacing'
 import Navbar from '../navbar/index.navbar'
-import HeroBg from './bg/index.bg'
+import HeroBg from './bg/hero.bg'
 import styles from './index.module.sass'
 
 const Hero: React.FC<HeroProps> = ({

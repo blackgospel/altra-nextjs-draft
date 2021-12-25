@@ -1,34 +1,42 @@
-import { IconArrowRight } from '@tabler/icons'
-import StoryImage from 'assets/images/home/hero-dashboard.png'
-import Button from 'components/global/button/index.button'
-import Icon from 'components/global/icon/index.icon'
+import { IconBlockquote } from '@tabler/icons'
+import TestimonialBg from 'assets/images/customers/testimonial-bg.png'
+import Card from 'components/global/card/index.card'
 import Spacing from 'components/global/spacing/index.spacing'
-import Image from 'next/image'
 import styles from './index.module.sass'
 
 const StoriesCard: React.FC<CustomerStoriesCardType> = ({
   title,
   story,
-  readMore = true,
+  role,
+  company,
 }) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.image_wrapper}>
-        <Image src={StoryImage} />
+    <Card image={TestimonialBg}>
+      <div className={styles.container}>
+        <div className={styles.quote}>
+          <IconBlockquote />
+        </div>
+
+        <Spacing sm />
+
+        <div className={styles.client_info}>
+          <span className={styles.client_info_name}>
+            {role && <p className={styles.client_role}>{role}</p>}
+          </span>
+          {company && <span className={styles.separator}>|</span>}
+          <span className={styles.client_info_name}>
+            {company && <p className={styles.client_company}>{company}</p>}
+          </span>
+        </div>
+
+        <Spacing sm />
+
+        <div className="">
+          <h2 className={styles.title}>{title}</h2>
+          <p className={styles.content}>{story}</p>
+        </div>
       </div>
-      <h2 className={styles.title}>{title}</h2>
-      <p className={styles.content}>{story}</p>
-      {readMore && (
-        <>
-          <Spacing />
-          <div className={styles.button_wrapper}>
-            <Button sm>
-              Read More <Icon icon={<IconArrowRight />} />
-            </Button>
-          </div>
-        </>
-      )}
-    </div>
+    </Card>
   )
 }
 

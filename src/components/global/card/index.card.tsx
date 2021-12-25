@@ -6,6 +6,7 @@ const Card: React.FC<CardProps> = ({
   primary,
   secondary,
   accent,
+  image,
 }) => {
   return (
     <div
@@ -17,6 +18,7 @@ const Card: React.FC<CardProps> = ({
           [styles.accent]: accent,
         },
       ])}
+      style={{ backgroundImage: `url(${image?.src || ''})` }}
     >
       {children}
     </div>

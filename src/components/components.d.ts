@@ -97,6 +97,7 @@ interface CardProps {
   primary?: boolean
   secondary?: boolean
   accent?: boolean
+  image?: any
 }
 
 interface TestimonialCardProps {
@@ -130,7 +131,9 @@ interface CompaniesProps {
 interface CustomerStoriesCardType {
   title?: string
   story?: string
-  readMore?: boolean
+  name?: string
+  role?: string
+  company?: string
 }
 
 interface ProductsDescriptionProps {

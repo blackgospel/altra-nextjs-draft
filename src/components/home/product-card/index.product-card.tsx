@@ -26,7 +26,7 @@ const ProductCard: React.FC = () => {
                     <h2 className={styles.title}>{title}</h2>
                     <p className={styles.subtitle}>{description}</p>
 
-                    <Spacing />
+                    <Spacing sm />
 
                     <List
                       title="product"

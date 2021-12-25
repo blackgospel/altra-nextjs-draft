@@ -1,6 +1,7 @@
 @import "styles/media"
 
 .container
+  display: block
 
 .title
   text-align: center
@@ -8,5 +9,8 @@
 
 .customer_stories
   display: grid
-  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) )
-  grid-gap: var(--space-lg)
+  gap: var(--space-md)
+  grid-template-columns: 1fr
+
+  @include media(sm)
+    grid-template-columns: 1fr 1fr

@@ -16,12 +16,13 @@ const HeroBg: React.FC<HeroBgProps> = ({ color = 'primary' }) => {
         },
       ])}
     >
-      <ul className={styles.wrapper}>
+      <div className={styles.wrapper}>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+        <li></li>
+      </div>
     </div>
   )
 }

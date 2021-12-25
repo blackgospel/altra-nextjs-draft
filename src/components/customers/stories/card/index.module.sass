@@ -1,15 +1,84 @@
 @import "styles/media"
 
+$quote-size: 48px
+$card-accent: #202473
+
 .container
-  display: grid
-  
-  @include media(md)
-    grid-template-rows: minmax(0, auto) minmax(auto, 1fr) minmax(0, auto)
+  display: inline-block
 
-.title
-  color: var(--black)
+.quote
+  width: $quote-size
+  height: $quote-size
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: $card-accent
+  border-radius: var(--border-radius-circle)
 
-.button_wrapper
-  
   svg
     color: var(--white)
+
+.client_info_name
+  display: block
+
+.client_info
+  display: block
+  font-weight: bold
+  font-size: var(--text-sm)
+  color: var(--white)
+  
+  @include media(md)
+    display: inline-flex
+    align-items: center 
+    background-color: $card-accent
+    padding: var(--space-xs) var(--space-sm)
+    border-radius: var(--border-radius-secondary)
+    max-width: none
+
+.separator
+  margin: 0 4px
+  display: none
+
+  @include media(md)
+    display: inline-block
+
+.client_name
+  color: var(--color-primary)
+  font-size: 110%
+  margin: 0
+
+.client_role
+  display: inline-block
+  font-weight: bold
+  font-size: 110%
+  margin: 0
+  margin-bottom: var(--space-xs)
+  padding: var(--space-xs) var(--space-sm)
+  background-color: $card-accent
+  border-radius: var(--border-radius-secondary)
+
+  @include media(md)
+    padding: 0
+    margin-bottom: 0
+
+.client_company
+  display: inline-block
+  font-size: 110%
+  margin: 0
+  margin-bottom: var(--space-xs)
+  padding: var(--space-xs) var(--space-sm)
+  background-color: $card-accent
+  border-radius: var(--border-radius-secondary)
+
+  @include media(md)
+    padding: 0
+    margin-bottom: 0
+
+.title
+  color: $card-accent
+  margin: 0
+
+.content
+  font-size: var(--text-md)
+  font-family: var(--font-secondary)
+  line-height: 1.6
