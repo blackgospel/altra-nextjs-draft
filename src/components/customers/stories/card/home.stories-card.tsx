@@ -32,7 +32,7 @@ const StoriesCard: React.FC<CustomerStoriesCardType> = ({
         <Spacing sm />
 
         <div className="">
-          <h2 className={styles.title}>{title}</h2>
+          <h3 className={styles.title}>{title}</h3>
           <p className={styles.content}>{story}</p>
         </div>
       </div>
