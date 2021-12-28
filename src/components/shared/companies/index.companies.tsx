@@ -9,50 +9,53 @@ import Spacing from 'components/global/spacing/index.spacing'
 import CompaniesData from 'data/companies.json'
 import Image from 'next/image'
 import { AppRoutes } from 'routes/routes'
+import Anime from '../anime/index.anime'
 import styles from './index.module.sass'
 
 const Companies: React.FC<CompaniesProps> = ({ readMoreButton }) => {
   return (
     <Section lgWidth>
-      <div className={styles.container}>
-        <h3 className={styles.title}>{CompaniesData.title}</h3>
+      <Anime>
+        <div className={styles.container}>
+          <h3 className={styles.title}>{CompaniesData.title}</h3>
 
-        <Spacing />
+          <Spacing />
 
-        <p className={styles.content}>{CompaniesData.description}</p>
+          <p className={styles.content}>{CompaniesData.description}</p>
 
-        <Spacing />
+          <Spacing />
 
-        <div className={styles.companies_wrapper}>
-          <div className={styles.companies}>
-            <Image src={Company1} alt="Beechfield Logo" />
-          </div>
-          <div className={styles.companies}>
-            <Image src={Company2} alt="Care Choice Logo" />
-          </div>
-          <div className={styles.companies}>
-            <Image src={Company3} alt="SignaCare Logo" />
-          </div>
-          <div className={styles.companies}>
-            <Image src={Company4} alt="TLC Logo" />
-          </div>
-          <div className={styles.companies}>
-            <Image src={Company5} alt="VirtueCare Logo" />
-          </div>
-        </div>
-
-        {readMoreButton && (
-          <>
-            <Spacing />
-
-            <div className={styles.button_wrapper}>
-              <Button href={AppRoutes.CUSTOMERS} lg>
-                {CompaniesData.button}
-              </Button>
+          <div className={styles.companies_wrapper}>
+            <div className={styles.companies}>
+              <Image src={Company1} alt="Beechfield Logo" />
             </div>
-          </>
-        )}
-      </div>
+            <div className={styles.companies}>
+              <Image src={Company2} alt="Care Choice Logo" />
+            </div>
+            <div className={styles.companies}>
+              <Image src={Company3} alt="SignaCare Logo" />
+            </div>
+            <div className={styles.companies}>
+              <Image src={Company4} alt="TLC Logo" />
+            </div>
+            <div className={styles.companies}>
+              <Image src={Company5} alt="VirtueCare Logo" />
+            </div>
+          </div>
+
+          {readMoreButton && (
+            <>
+              <Spacing />
+
+              <div className={styles.button_wrapper}>
+                <Button href={AppRoutes.CUSTOMERS} lg>
+                  {CompaniesData.button}
+                </Button>
+              </div>
+            </>
+          )}
+        </div>
+      </Anime>
     </Section>
   )
 }

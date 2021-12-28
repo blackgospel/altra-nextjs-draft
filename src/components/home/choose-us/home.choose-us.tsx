@@ -2,37 +2,40 @@ import Button from 'components/global/button/index.button'
 import List from 'components/global/list/index.list'
 import Section from 'components/global/section/index.section'
 import Spacing from 'components/global/spacing/index.spacing'
+import Anime from 'components/shared/anime/index.anime'
 import HomeChooseUsData from 'data/home/choose-us.json'
 import styles from './index.module.sass'
 
 const ChooseUs: React.FC = () => {
   return (
     <Section bubbleRight2>
-      <div className={styles.container}>
-        <h2 className={styles.title}>{HomeChooseUsData.title}</h2>
+      <Anime>
+        <div className={styles.container}>
+          <h2 className={styles.title}>{HomeChooseUsData.title}</h2>
 
-        <Spacing />
+          <Spacing />
 
-        <p className={styles.content}>{HomeChooseUsData.description}</p>
+          <p className={styles.content}>{HomeChooseUsData.description}</p>
 
-        <Spacing />
+          <Spacing />
 
-        <h3 className={styles.subtitle}>{HomeChooseUsData.subtitle}</h3>
+          <h3 className={styles.subtitle}>{HomeChooseUsData.subtitle}</h3>
 
-        <Spacing />
+          <Spacing />
 
-        <List
-          color="on_surface"
-          title="choose-us"
-          list={HomeChooseUsData.list}
-        />
+          <List
+            color="on_surface"
+            title="choose-us"
+            list={HomeChooseUsData.list}
+          />
 
-        <Spacing />
+          <Spacing />
 
-        <div className={styles.button_wrapper}>
-          <Button lg>{HomeChooseUsData.button}</Button>
+          <div className={styles.button_wrapper}>
+            <Button lg>{HomeChooseUsData.button}</Button>
+          </div>
         </div>
-      </div>
+      </Anime>
     </Section>
   )
 }
