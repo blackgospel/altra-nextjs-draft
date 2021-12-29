@@ -19,19 +19,23 @@ const StoriesCard: React.FC<CustomerStoriesCardType> = ({
 
         <Spacing sm />
 
-        <div className={styles.client_info}>
-          <span className={styles.client_info_name}>
-            {role && <p className={styles.client_role}>{role}</p>}
-          </span>
-          {company && <span className={styles.separator}>|</span>}
-          <span className={styles.client_info_name}>
-            {company && <p className={styles.client_company}>{company}</p>}
-          </span>
-        </div>
+        {(role || company) && (
+          <>
+            <div className={styles.client_info}>
+              <span className={styles.client_info_name}>
+                {role && <p className={styles.client_role}>{role}</p>}
+              </span>
+              {company && <span className={styles.separator}>|</span>}
+              <span className={styles.client_info_name}>
+                {company && <p className={styles.client_company}>{company}</p>}
+              </span>
+            </div>
 
-        <Spacing sm />
+            <Spacing sm />
+          </>
+        )}
 
-        <div className="">
+        <div>
           <h3 className={styles.title}>{title}</h3>
           <p className={styles.content}>{story}</p>
         </div>

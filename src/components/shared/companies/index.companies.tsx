@@ -1,6 +1,9 @@
 import Company1 from 'assets/images/company/company-beechfield.png'
 import Company2 from 'assets/images/company/company-carechoice.jpg'
+import Company6 from 'assets/images/company/company-marymount.png'
 import Company3 from 'assets/images/company/company-signacare.jpg'
+import Company8 from 'assets/images/company/company-stluke.png'
+import Company7 from 'assets/images/company/company-stmartins.jpg'
 import Company4 from 'assets/images/company/company-tlc.jpg'
 import Company5 from 'assets/images/company/company-virtuecare.png'
 import Button from 'components/global/button/index.button'
@@ -40,6 +43,15 @@ const Companies: React.FC<CompaniesProps> = ({ readMoreButton }) => {
             </div>
             <div className={styles.companies}>
               <Image src={Company5} alt="VirtueCare Logo" />
+            </div>
+            <div className={styles.companies}>
+              <Image src={Company6} alt="MaryMount Logo" />
+            </div>
+            <div className={styles.companies}>
+              <Image src={Company7} alt="St Martins Logo" />
+            </div>
+            <div className={styles.companies}>
+              <Image src={Company8} alt="St Luke Logo" />
             </div>
           </div>
 

@@ -1,0 +1,28 @@
+@import "styles/media"
+
+.container
+  display: block
+
+.title
+  text-align: center
+  color: var(--gray-3)
+
+.companies_wrapper
+  display: grid
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) )
+  grid-gap: var(--space-lg)
+  place-content: center
+
+  @include media(md)
+    grid-template-columns: repeat( auto-fit, minmax(175px, 1fr) )
+
+.companies
+  display: flex
+  align-items: center
+  justify-content: center
+  
+  img
+    max-height: 180px
+    
+    @include media(sm)
+      max-height: 110px

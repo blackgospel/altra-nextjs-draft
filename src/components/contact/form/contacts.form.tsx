@@ -16,7 +16,7 @@ const ContactsForm: React.FC = () => {
           className={styles.input}
           placeholder="Care home`s email address"
         />
-        <input className={styles.input} placeholder="Personal message" />
+        <textarea className={styles.input} placeholder="Personal message" />
         <Button lg>Submit Details</Button>
       </div>
     </Section>

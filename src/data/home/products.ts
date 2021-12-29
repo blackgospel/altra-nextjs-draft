@@ -20,9 +20,9 @@ export default [
     description:
       'Your very own on-demand wellbeing hub. The tool to provide variety and consistency to your activity/wellbeing programmes.',
     list: [
-      'Eliminate use of multiple messaging streams like Whatsapp, email and individual texts.',
-      'Stay ahead of vacant shifts with our open shift management system.',
-      'Variety of content so there`s something to suit every resident.',
+      'Access 100s of ideas and videos for your activities / wellbeing team.',
+      'All content is created and produced by experts in active aging.',
+      'Variety of content so there’s something to suit every resident.',
     ],
     color: 'secondary',
     link: '/products/wellbeing-hub',
@@ -33,7 +33,7 @@ export default [
     description:
       'Consolidate all team messaging into one communication hub. Save time. Communicate effectively. Eliminate back-and-forths.',
     list: [
-      'Access 100s of ideas and videos for your activities / wellbeing team.',
+      'Eliminate use of multiple messaging streams like Whatsapp, email and individual texts',
       'Stay ahead of vacant shifts with our open shift management system.',
       'Simple user experience for managers and staff making communication a breeze!',
     ],

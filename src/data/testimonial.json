@@ -3,36 +3,86 @@
     "name": "Keith Martin",
     "role": "CEO",
     "testimonial": "You can't put a price on the smiles on the faces of residents when they see these pictures and comments from their loved ones.",
-    "company": "St Martins Care"
+    "company": "St Martins Care",
+    "type": "family",
+    "home": true
   },
   {
     "name": "Miracline Samuel",
     "role": "Director of Nursing",
     "testimonial": "I see huge improvement with very little effort from managers. It allows them to focus their time on clinical governance.",
-    "company": "TLC Group"
+    "company": "TLC Group",
+    "type": "staff",
+    "home": true
   },
   {
     "name": "Anne Marie Woods",
     "role": "Director of Nursing",
     "testimonial": "ADON's and CNM's find Altra user friendly. It is very easy to use and has saved us a lot of time dealing with staff. Overall very happy with Altra.",
-    "company": "Newtownpark House"
+    "company": "Newtownpark House",
+    "type": "staff",
+    "home": true
   },
   {
     "name": "Orla O`Sullivan",
     "role": "Director of Nursing",
     "testimonial": "Altra has made such a difference when interacting with residents. For example, a resident whose conversation used to focus on pain no longer mentions it when viewing family photos and comments on the Family Newsletter. Altra has had such a positive impact on the Home.",
-    "company": "St Luke`s Home"
+    "company": "St Luke`s Home",
+    "type": "family",
+    "home": true
   },
   {
     "name": "Kiera Garrigan",
     "role": "Administration",
     "testimonial": "It`s great! Families get to see what the residents are up to and the activities they are involved with.",
-    "company": "Kilbrew Nursing Home"
+    "company": "Kilbrew Nursing Home",
+    "type": "family",
+    "home": true
   },
   {
     "name": "Jaison John",
     "role": "Director of Nursing",
     "testimonial": "It is simple to use for both staff and families. It’s a great tool to keep residents connected with their families, sharing photos of good memories in their life.",
-    "company": "SignaCare"
+    "company": "SignaCare",
+    "type": "family",
+    "home": true
+  },
+  {
+    "name": "Catherine Buttimer",
+    "role": "Director of Nursing",
+    "testimonial": "We are delighted with the system. Staff are very responsive. Definitely more time efficient for managers with roster management and communication.",
+    "company": "Carechoice",
+    "type": "staff"
+  },
+  {
+    "name": "Min Wei",
+    "role": "Director of Nursing",
+    "testimonial": "Altra has saved me a lot of time. It has been great as I don’t have to chase staff. Altra allows them to pick up extra shifts.",
+    "company": "Beechfield Group",
+    "type": "staff"
+  },
+  {
+    "name": "Grainne Henson",
+    "role": "Director of Nursing",
+    "testimonial": "It is working really well here and we are delighted. So much more time given back in man hours.",
+    "company": "Virtue Bridhaven",
+    "type": "staff"
+  },
+  {
+    "name": "Catherine Tighe",
+    "role": "Director of Nursing",
+    "testimonial": "It helps us connect with families in a more controlled way. It provides us with stronger data security that can be challenging on a more open communication platforms like email or social media.",
+    "company": "Marymount Care Centre",
+    "type": "family"
+  },
+  {
+    "name": "Daughter of resident",
+    "testimonial": "What a wonderful idea this is. It is such a pleasure to sign in and see what is happening. It is so important.",
+    "type": "family"
+  },
+  {
+    "name": "Son of resident",
+    "testimonial": "I’m based in the States and this is a fantastic way to stay in touch with anything regarding my dad. Thank you for helping us stay in contact.",
+    "type": "family"
   }
 ]

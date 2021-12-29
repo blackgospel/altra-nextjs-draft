@@ -147,3 +147,10 @@ interface ProductsDescriptionProps {
 interface SplitLayoutProps {
   reverse?: boolean
 }
+
+interface StoriesProps {
+  title?: string
+  list: any[]
+  bubbleRight2?: boolean
+  bubbleLeft2?: boolean
+}

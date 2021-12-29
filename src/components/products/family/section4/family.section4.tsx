@@ -1,5 +1,3 @@
-import List from 'components/global/list/index.list'
-import Spacing from 'components/global/spacing/index.spacing'
 import CenteredLayout from 'components/shared/layouts/index.centered'
 import styles from './index.module.sass'
 
@@ -7,25 +5,14 @@ const FamilySection4: React.FC = () => {
   return (
     <CenteredLayout>
       <div className={styles.container}>
-        <h2 className={styles.title}>Use on any device, anywhere</h2>
+        <h2 className={styles.title}>Manage visits with ease</h2>
         <p className={styles.content}>
-          Managers, carestaff and families can access Altra on any device
-          (mobile, tablet or desktop) to post content, respond to messages,
-          giving everyone the information they need - anytime, anywhere.
+          Reduce the administrative burden managing visits with our visitor
+          booking portal and eGuestbook. Visits can be linked to resident
+          profiles, alerting you if residents have not had a visit for some
+          time.
         </p>
       </div>
-
-      <Spacing sm />
-
-      <List
-        color="on_surface"
-        title="family-section-4-list"
-        list={[
-          'Add resident details. From your care management system or wherever you store details)',
-          'Invite family members. Families will be automatically invited to their loved ones account when you add them to Altra',
-          'Start Sharing. Fill your feed, print the newsletters and see the delight on residents faces. We are on hand to help with any queries along the way. ',
-        ]}
-      />
     </CenteredLayout>
   )
 }

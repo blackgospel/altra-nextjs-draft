@@ -50,7 +50,7 @@ const Testimonials: React.FC = () => {
           }}
           onSwiper={(swiper) => handleSetSwiper(swiper)}
         >
-          {TestimonialsData.map(
+          {TestimonialsData.filter(({ home }) => home).map(
             ({ name, role, testimonial, company }, index) => {
               return (
                 <SwiperSlide key={name}>

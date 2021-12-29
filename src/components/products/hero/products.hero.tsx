@@ -1,4 +1,5 @@
 import Hero from 'components/shared/hero/index.hero'
+import SocialData from 'data/social-links.json'
 
 const ProductsHero: React.FC<HeroProps> = ({
   title,
@@ -6,7 +7,13 @@ const ProductsHero: React.FC<HeroProps> = ({
   heroColor,
 }) => {
   return (
-    <Hero title={title} description={description} heroColor={heroColor}></Hero>
+    <Hero
+      title={title}
+      description={description}
+      heroColor={heroColor}
+      buttonText="Book a demo"
+      buttonHref={SocialData.calendly}
+    ></Hero>
   )
 }
 

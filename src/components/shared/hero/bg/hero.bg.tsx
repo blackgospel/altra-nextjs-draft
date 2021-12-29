@@ -7,21 +7,22 @@ const HeroBg: React.FC<HeroBgProps> = ({ color = 'primary' }) => {
       className={cn([
         styles.container,
         {
-          [styles.primary]: color === 'primary',
-          [styles.secondary]: color === 'secondary',
-          [styles.accent]: color === 'accent',
-          [styles.red]: color === 'red',
-          [styles.violet]: color === 'violet',
-          [styles.green]: color === 'green',
+          ...(color && { [styles[color]]: true }),
         },
       ])}
     >
       <div className={styles.wrapper}>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   )

@@ -10,8 +10,8 @@ const HomeHero: React.FC = () => {
     <Hero
       title={HomeHeroData.title}
       description={HomeHeroData.description}
-      buttonText={HomeHeroData.button}
       heroMarginBottom
+      buttonText={HomeHeroData.button}
       buttonHref={SocialData.calendly}
     >
       <div className={styles.image_wrapper}>
