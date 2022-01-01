@@ -5,6 +5,7 @@ import FamilyImage4 from 'assets/images/family/family-section4.png'
 import FamilyImage5 from 'assets/images/family/family-section5.png'
 import List from 'components/global/list/index.list'
 import Page from 'components/global/page/index.page'
+import Spacing from 'components/global/spacing/index.spacing'
 import ProductsDescription from 'components/products/descriptions/products.descriptions'
 import FamilyBenefits from 'components/products/family/benefits/family.benefits'
 import FamilyTestimonial from 'components/products/family/testimonial/family.testimonial'
@@ -59,7 +60,7 @@ const Family = () => {
         profiles, alerting you if residents have not had a visit for some
         time."
         image={FamilyImage4}
-        color="green"
+        color="violet"
       />
       <ProductsDescription
         title="Use on any device, anywhere"
@@ -67,10 +68,14 @@ const Family = () => {
         (mobile, tablet or desktop) to post content, respond to messages,
         giving everyone the information they need - anytime, anywhere."
         image={FamilyImage5}
-        color="green"
+        color="red"
         reverse
         bubbleRight
       >
+        <h3>Get setup in minutes!</h3>
+
+        <Spacing sm />
+
         <List
           color="on_surface"
           title="family-section-4-list"
