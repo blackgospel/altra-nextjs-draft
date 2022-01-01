@@ -74,6 +74,7 @@ interface SectionProps {
   bubbleLeftSmall?: boolean
   fullWidth?: boolean
   lgWidth?: boolean
+  xlWidth?: boolean
 }
 
 interface SpacingProps {
@@ -142,10 +143,15 @@ interface ProductsDescriptionProps {
   image?: string | StaticImageData
   color?: 'violet' | 'red' | 'green'
   reverse?: boolean
+  bubbleRight?: boolean
+  bubbleLeft?: boolean
 }
 
 interface SplitLayoutProps {
   reverse?: boolean
+  xlWidth?: boolean
+  bubbleRight?: boolean
+  bubbleLeft?: boolean
 }
 
 interface StoriesProps {
@@ -153,4 +159,9 @@ interface StoriesProps {
   list: any[]
   bubbleRight2?: boolean
   bubbleLeft2?: boolean
+}
+
+interface CenteredLayoutProps {
+  bubbleLeft?: boolean
+  bubbleRight?: boolean
 }

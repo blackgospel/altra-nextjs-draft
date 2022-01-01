@@ -9,7 +9,7 @@
   align-items: center
   justify-content: center
 
-.split_wrapper
+.split_wrapper, .split_product_wrapper
   display: grid
   grid-template-columns: repeat(1, 1fr)
   grid-gap: var(--space-lg)
@@ -28,6 +28,15 @@
   @include media(md)
     grid-gap: var(--space-xl)
     grid-template-columns: repeat(2, 1fr)
+
+.split_product_wrapper
+
+  @include media(md)
+    grid-gap: var(--space-xl)
+    grid-template-columns: 6fr 7fr
+
+    &.reverse
+      grid-template-columns: 7fr 6fr
 
 .split_child
   flex: 1 1 auto

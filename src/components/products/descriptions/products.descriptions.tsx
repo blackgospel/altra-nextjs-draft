@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 import Spacing from 'components/global/spacing/index.spacing'
-import SplitLayout from 'components/shared/layouts/index.split'
+import SplitProductLayout from 'components/shared/layouts/index.split.products'
 import Image from 'next/image'
 import styles from './index.module.sass'
 
@@ -11,11 +11,18 @@ const ProductsDescription: React.FC<ProductsDescriptionProps> = ({
   image,
   color = 'violet',
   reverse,
+  bubbleLeft,
+  bubbleRight,
 }) => {
   return (
-    <SplitLayout reverse={reverse}>
+    <SplitProductLayout
+      bubbleLeft={bubbleLeft}
+      bubbleRight={bubbleRight}
+      xlWidth
+      reverse={reverse}
+    >
       <div className={styles.wrapper}>
-        <h3 className={styles.title}>{title}</h3>
+        <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>
 
         {children && (
@@ -34,7 +41,7 @@ const ProductsDescription: React.FC<ProductsDescriptionProps> = ({
       >
         {image && <Image src={image} alt="Hero dashboard" />}
       </div>
-    </SplitLayout>
+    </SplitProductLayout>
   )
 }
 

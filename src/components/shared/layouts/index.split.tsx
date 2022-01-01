@@ -3,9 +3,13 @@ import Section from 'components/global/section/index.section'
 import React from 'react'
 import styles from './index.module.sass'
 
-const SplitLayout: React.FC<SplitLayoutProps> = ({ children, reverse }) => {
+const SplitLayout: React.FC<SplitLayoutProps> = ({
+  children,
+  reverse,
+  xlWidth,
+}) => {
   return (
-    <Section lgWidth>
+    <Section lgWidth={!xlWidth} xlWidth={xlWidth}>
       <div
         className={cn([styles.split_wrapper, { [styles.reverse]: reverse }])}
       >

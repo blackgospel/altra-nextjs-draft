@@ -3,7 +3,7 @@ import styles from './index.module.sass'
 
 const WellbeingHubIntroduction: React.FC = () => {
   return (
-    <CenteredLayout>
+    <CenteredLayout bubbleLeft>
       <div className={styles.container}>
         <h2 className={styles.title}>What is the</h2>
         <h2 className={styles.title}>Wellbeing Hub?</h2>

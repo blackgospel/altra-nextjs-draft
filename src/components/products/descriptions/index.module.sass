@@ -20,6 +20,7 @@
 
 .description
   text-align: center
+  font-size: var(--text-md)
 
   @include media(md)
     text-align: left
@@ -36,6 +37,10 @@
 
   img
     border-radius: var(--border-radius-primary)
+    max-height: 250px
+
+    @include media(md)
+      max-height: 450px
 
   @include media(md)
     max-width: none

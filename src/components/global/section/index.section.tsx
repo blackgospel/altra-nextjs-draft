@@ -5,6 +5,7 @@ const Section: React.FC<SectionProps> = ({
   children,
   fullWidth,
   lgWidth,
+  xlWidth,
   bubbleRight1,
   bubbleRight2,
   bubbleRightSmall,
@@ -31,7 +32,8 @@ const Section: React.FC<SectionProps> = ({
           styles.wrapper,
           {
             [styles.full_width]: fullWidth,
-            [styles.width_section_large]: lgWidth,
+            [styles.width_section_lg]: lgWidth,
+            [styles.width_section_xl]: xlWidth,
           },
         ])}
       >

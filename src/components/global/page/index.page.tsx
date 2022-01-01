@@ -1,3 +1,4 @@
+import Footer from 'components/shared/footer/index.footer'
 import Head from 'next/head'
 import styles from './index.module.sass'
 
@@ -10,6 +11,7 @@ const Page: React.FC<PageProps> = ({ children, title = 'Altra' }) => {
         </title>
       </Head>
       {children}
+      <Footer />
     </div>
   )
 }

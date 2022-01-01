@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import useEventListener from './useEventListener'
 
 const useWindowSize = (): UseWindowSizeType => {
@@ -16,7 +16,7 @@ const useWindowSize = (): UseWindowSizeType => {
 
   useEventListener('resize', handleSize)
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     handleSize()
   }, [])
 

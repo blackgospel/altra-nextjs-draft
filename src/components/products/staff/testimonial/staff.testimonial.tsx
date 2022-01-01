@@ -1,5 +1,5 @@
 import { IconBlockquote } from '@tabler/icons'
-import Avatar from 'assets/images/home/avatar.jpg'
+import Avatar from 'assets/images/staff/miracline.jpg'
 import Icon from 'components/global/icon/index.icon'
 import Section from 'components/global/section/index.section'
 import Spacing from 'components/global/spacing/index.spacing'

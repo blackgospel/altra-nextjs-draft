@@ -1,10 +1,17 @@
 import Section from 'components/global/section/index.section'
+import Anime from '../anime/index.anime'
 import styles from './index.module.sass'
 
-const CenteredLayout: React.FC = ({ children }) => {
+const CenteredLayout: React.FC<CenteredLayoutProps> = ({
+  children,
+  bubbleLeft,
+  bubbleRight,
+}) => {
   return (
-    <Section>
-      <div className={styles.centered_wrapper}>{children}</div>
+    <Section bubbleLeft1={bubbleLeft} bubbleRight1={bubbleRight}>
+      <Anime>
+        <div className={styles.centered_wrapper}>{children}</div>
+      </Anime>
     </Section>
   )
 }

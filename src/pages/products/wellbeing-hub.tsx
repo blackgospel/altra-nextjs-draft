@@ -7,7 +7,6 @@ import ProductsDescription from 'components/products/descriptions/products.descr
 import ProductsHero from 'components/products/hero/products.hero'
 import WellbeingHubBenefits from 'components/products/wellbeing-hub/benefits/wellbeing-hub.benefits'
 import WellbeingHubIntroduction from 'components/products/wellbeing-hub/introduction/wellbeing-hub.introduction'
-import Footer from 'components/shared/footer/index.footer'
 
 const WellbeingHub = () => {
   return (
@@ -25,6 +24,7 @@ const WellbeingHub = () => {
           in all of your homes or communities."
         image={WellbeingImage1}
         color="violet"
+        bubbleRight
       >
         <List
           color="accent"
@@ -49,8 +49,8 @@ const WellbeingHub = () => {
         description="Because you can’t do it all. No one could. This is your tool to round out current offerings, provide the variety, the consistency, the EXPERT quality and results driven exercises classes and wellness resources that you desire! We’re here to help."
         image={WellbeingImage3}
         color="green"
+        bubbleLeft
       />
-      <Footer />
     </Page>
   )
 }
