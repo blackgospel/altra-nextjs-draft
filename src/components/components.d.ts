@@ -47,8 +47,10 @@ interface IconProps {
 interface UseNavbarType {
   active: boolean
   subNavActive: boolean
+  scrollActive: boolean
   handleSubNavToggleActive: () => void
   handleToggleActive: () => void
+  handleSetScrollActive: () => void
 }
 
 interface NavProps {
