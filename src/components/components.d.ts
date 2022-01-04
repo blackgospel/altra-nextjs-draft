@@ -68,6 +68,7 @@ interface NavMenuType {
 }
 
 interface SectionProps {
+  small?: boolean
   bubbleRight1?: boolean
   bubbleRight2?: boolean
   bubbleRightSmall?: boolean
@@ -143,7 +144,7 @@ interface ProductsDescriptionProps {
   title?: string
   description?: string
   image?: string | StaticImageData
-  color?: 'violet' | 'red' | 'green'
+  color?: 'primary' | 'secondary' | 'violet' | 'red' | 'green'
   reverse?: boolean
   bubbleRight?: boolean
   bubbleLeft?: boolean
@@ -166,4 +167,16 @@ interface StoriesProps {
 interface CenteredLayoutProps {
   bubbleLeft?: boolean
   bubbleRight?: boolean
+}
+
+interface PrivatePolicySectionProps {
+  small?: boolean
+  title?: string
+  subtitle?: string
+}
+
+interface DataSecuritySectionProps {
+  small?: boolean
+  title?: string
+  subtitle?: string
 }

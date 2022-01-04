@@ -13,7 +13,7 @@ const ProductsHero: React.FC<HeroProps> = ({
       heroColor={heroColor}
       buttonText="Book a demo"
       buttonHref={SocialData.calendly}
-    ></Hero>
+    />
   )
 }
 

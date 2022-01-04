@@ -5,7 +5,8 @@ import ProductImage2 from 'assets/images/home/hero-wellbeing.png'
 export default [
   {
     title: 'Family Engagement & Resident Experience',
-    description: 'Improve connectedness of residents, families and your team.',
+    description:
+      'Enhance resident experience in your care home with tools that provide meaningful engagement and keep families, residents and your team connected.',
     list: [
       'Secure engagement app that allows care homes to share updates on the well-being of residents directly with families.',
       'Convert digital content from families and your team into personalised physical newsletters for residents to enjoy.',
@@ -18,7 +19,7 @@ export default [
   {
     title: 'Wellbeing Hub',
     description:
-      'Your very own on-demand wellbeing hub. The tool to provide variety and consistency to your activity/wellbeing programmes.',
+      'Your very own on-demand wellbeing hub. Access a library of curated content to provide variety and consistency to your activity programmes in your care home.',
     list: [
       'Access 100s of ideas and videos for your activities / wellbeing team.',
       'All content is created and produced by experts in active aging.',
@@ -31,7 +32,7 @@ export default [
   {
     title: 'Staff Communication',
     description:
-      'Consolidate all team messaging into one communication hub. Save time. Communicate effectively. Eliminate back-and-forths.',
+      'Consolidate all your team messaging into one single platform. Communicate effectively, eliminate back-and-forths, and save time.',
     list: [
       'Eliminate use of multiple messaging streams like Whatsapp, email and individual texts',
       'Stay ahead of vacant shifts with our open shift management system.',

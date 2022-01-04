@@ -13,10 +13,10 @@ const FamilyBenefits: React.FC = () => {
             color="on_accent"
             title="family-benefits"
             list={[
-              'A joy for residents',
-              'Easy to use for families and your team',
-              'Fits into your current workflows and saves you time',
-              'Greater interaction between all stakeholders (residents families and your staff)',
+              'A joy for residents in your care home.',
+              'Easy to use for families and your team.',
+              'Fits into your current workflows and saves you time.',
+              'Greater interaction between all stakeholders including residents, families and your staff.',
             ]}
           />
         </div>

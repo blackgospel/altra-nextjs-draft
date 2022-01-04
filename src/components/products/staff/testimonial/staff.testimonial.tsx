@@ -3,7 +3,6 @@ import Avatar from 'assets/images/staff/miracline.jpg'
 import Icon from 'components/global/icon/index.icon'
 import Section from 'components/global/section/index.section'
 import Spacing from 'components/global/spacing/index.spacing'
-import HomeCustomerData from 'data/home/customer.json'
 import Image from 'next/image'
 import styles from './index.module.sass'
 
@@ -20,7 +19,7 @@ const StaffTestimonial: React.FC = () => {
 
           <div className={styles.grid_wrapper}>
             <div className={styles.avatar}>
-              <Image src={Avatar} alt={HomeCustomerData.avatarAlt} />
+              <Image src={Avatar} alt="Miracline Samuel image" />
             </div>
             <div className={styles.content}>
               <p className={styles.testimonial}>
@@ -34,9 +33,7 @@ const StaffTestimonial: React.FC = () => {
                 <p className={styles.info_name}>Miracline Samuel</p>
                 <div className={styles.info_org}>
                   <p className={styles.info_role}>Director of Nursing</p>
-                  <p className={styles.separator}>
-                    {HomeCustomerData.separator}
-                  </p>
+                  <p className={styles.separator}>@</p>
                   <p className={styles.info_company}>TLC</p>
                 </div>
               </div>

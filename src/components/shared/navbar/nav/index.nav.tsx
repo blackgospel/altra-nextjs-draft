@@ -50,7 +50,7 @@ const Nav: React.FC<NavProps> = ({ callback, subNavActive }) => {
           </ul>
         </div>
         <li className={styles.navbar_item}>
-          <Link href={AppRoutes.CUSTOMERS}>Customers</Link>
+          <Link href={AppRoutes.CUSTOMERS}>Care Home Stories</Link>
         </li>
         <li className={styles.navbar_item}>
           <Link href={AppRoutes.CONTACT}>Contact</Link>

@@ -5,4 +5,6 @@ export enum AppRoutes {
   STAFF = '/products/staff',
   CUSTOMERS = '/customers',
   CONTACT = '/contact',
+  PRIVACY_POLICY = '/privacy-policy',
+  DATA_SECURITY = '/data-security',
 }

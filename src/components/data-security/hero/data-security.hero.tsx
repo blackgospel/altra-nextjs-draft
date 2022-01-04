@@ -1,11 +1,11 @@
 import Hero from 'components/shared/hero/index.hero'
 import SocialData from 'data/social-links.json'
 
-const CustomersHero = () => {
+const DataSecurityHero = () => {
   return (
     <Hero
-      title='"Altra has changed our worklife"'
-      description="See what other care homes have to say about Altra."
+      title="Data Security"
+      description="Check out our data security."
       buttonText="Book a Demo"
       heroColor="secondary"
       buttonHref={SocialData.calendly}
@@ -13,4 +13,4 @@ const CustomersHero = () => {
   )
 }
 
-export default CustomersHero
+export default DataSecurityHero

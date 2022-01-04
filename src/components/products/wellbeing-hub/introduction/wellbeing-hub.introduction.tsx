@@ -1,28 +1,24 @@
-import CenteredLayout from 'components/shared/layouts/index.centered'
+import ProductImage from 'assets/images/home/hero-wellbeing.png'
+import SplitProductLayout from 'components/shared/layouts/index.split.products'
+import Image from 'next/image'
 import styles from './index.module.sass'
 
 const WellbeingHubIntroduction: React.FC = () => {
   return (
-    <CenteredLayout bubbleLeft>
+    <SplitProductLayout reverse bubbleLeft>
       <div className={styles.container}>
         <h2 className={styles.title}>What is the</h2>
         <h2 className={styles.title}>Wellbeing Hub?</h2>
         <p className={styles.content}>
-          Altra provides exercise and wellness videos and resources for older
-          adults. We are partnering with experts in active ageing, dementia care
-          & more to produce state-of-the-art exercise videos and wellness
-          resources specifically designed to improve the lives of older adults
-          in care.
-        </p>
-        <p className={styles.content}>
-          Each workshop and class has been created, produced and is led by
-          nationally recognized senior wellness experts to provide you a
-          purposeful, results driven fitness tool. This one-of-a-kind expert
-          programing is available effortlessly to any client, family or
-          caregiver.
+          We partner with experts in active ageing, dementia care & more to
+          produce state-of-the-art exercise videos and wellness resources
+          specifically designed to improve the lives of older adults in care
+          homes and at home. This one-of-a-kind expert programming is available
+          effortlessly on any device.
         </p>
       </div>
-    </CenteredLayout>
+      <Image src={ProductImage} alt="What is wellbeing hub" />
+    </SplitProductLayout>
   )
 }
 

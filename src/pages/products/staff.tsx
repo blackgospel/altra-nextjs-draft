@@ -1,6 +1,6 @@
 import StaffImage1 from 'assets/images/staff/staff-section1.png'
 import StaffImage2 from 'assets/images/staff/staff-section2.png'
-import StaffImage3 from 'assets/images/staff/staff-section3.png'
+import StaffImage3 from 'assets/images/staff/staff-section4.png'
 import List from 'components/global/list/index.list'
 import Page from 'components/global/page/index.page'
 import ProductsDescription from 'components/products/descriptions/products.descriptions'
@@ -13,7 +13,7 @@ const Staff = () => {
     <Page title="Staff | Altra Products">
       <ProductsHero
         title="Change how you connect with your workforce"
-        description="Save time. Communicate effectively. Eliminate back-and-forths."
+        description="Communicate effectively, eliminate back-and-forths, and save time."
         heroColor="red"
       />
       <StaffHeadline />
@@ -42,9 +42,8 @@ const Staff = () => {
           color="accent"
           title="wellbeing-hub-section-2"
           list={[
-            'Easy, low-cost setup',
-            'No bulky equipment to install.',
-            'Designed to fit any budget.',
+            'Managers post vacant shifts on Altra.',
+            'Staff receive notification via SMS and accept or dismiss with a click of a button.',
           ]}
           fullWidth
         />

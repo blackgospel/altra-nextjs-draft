@@ -2,6 +2,7 @@ import cn from 'classnames'
 import styles from './index.module.sass'
 
 const Section: React.FC<SectionProps> = ({
+  small,
   children,
   fullWidth,
   lgWidth,
@@ -18,6 +19,7 @@ const Section: React.FC<SectionProps> = ({
       className={cn([
         styles.container,
         {
+          [styles.small]: small,
           [styles.bubble_right_1]: bubbleRight1,
           [styles.bubble_right_2]: bubbleRight2,
           [styles.bubble_right_small]: bubbleRightSmall,

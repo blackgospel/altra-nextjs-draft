@@ -6,17 +6,17 @@ import styles from './index.module.sass'
 const WellbeingHubBenefits: React.FC = () => {
   return (
     <CenteredLayout>
-      <Card primary>
+      <Card accent>
         <div className={styles.container}>
           <h2 className={styles.headline}>Benefits</h2>
 
-          <List color="on_primary" title="wellbeing-hub-benefits">
+          <List color="on_accent" title="wellbeing-hub-benefits">
             <span className={styles.list_item}>
               <p className={styles.title}>
                 <strong>Always available</strong>
               </p>
               <p className={styles.content}>
-                Easy to use is always available to suit your schedule.
+                Easy to use and always available to suit your schedule.
               </p>
             </span>
             <span className={styles.list_item}>
@@ -24,8 +24,9 @@ const WellbeingHubBenefits: React.FC = () => {
                 <strong>Learn from the experts</strong>
               </p>
               <p className={styles.content}>
-                Or if you prefer, turn the room around and use us as your guide
-                to lead new offerings.
+                Our partnerships with active ageing experts ensure you have
+                access to the best wellness content for older adults in your
+                care home.
               </p>
             </span>
             <span className={styles.list_item}>
@@ -33,7 +34,7 @@ const WellbeingHubBenefits: React.FC = () => {
                 <strong>Variety for every level of care</strong>
               </p>
               <p className={styles.content}>
-                With Seated, Supported, Standing and Memory Care classes, you
+                With seated, supported, standing and memory care resources, you
                 have the right content for every resident.
               </p>
             </span>

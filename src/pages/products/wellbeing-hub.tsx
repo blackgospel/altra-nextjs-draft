@@ -1,4 +1,5 @@
-import WellbeingImage1 from 'assets/images/wellbeing/wellbeing-section-2.png'
+import ProductImage from 'assets/images/home/hero-wellbeing.png'
+import WellbeingImage1 from 'assets/images/wellbeing/wellbeing-section-1.jpg'
 import WellbeingImage2 from 'assets/images/wellbeing/wellbeing-section-3.png'
 import WellbeingImage3 from 'assets/images/wellbeing/wellbeing-section-4.jpg'
 import List from 'components/global/list/index.list'
@@ -6,22 +7,31 @@ import Page from 'components/global/page/index.page'
 import ProductsDescription from 'components/products/descriptions/products.descriptions'
 import ProductsHero from 'components/products/hero/products.hero'
 import WellbeingHubBenefits from 'components/products/wellbeing-hub/benefits/wellbeing-hub.benefits'
-import WellbeingHubIntroduction from 'components/products/wellbeing-hub/introduction/wellbeing-hub.introduction'
 
 const WellbeingHub = () => {
   return (
     <Page title="Wellbeing Hub | Altra Products">
       <ProductsHero
         title="Your on demand wellbeing hub"
-        description="The tool to provide variety, consistency and expert quality to your wellbeing programmes."
+        description="Access a library of curated content to provide variety and consistency to your activity programmes in your care home."
         heroColor="violet"
       />
-      <WellbeingHubIntroduction />
+      <ProductsDescription
+        title="What is the Wellbeing Hub?"
+        description="We partner with experts in active ageing, dementia care & more to
+        produce state-of-the-art exercise videos and wellness resources
+        specifically designed to improve the lives of older adults in care
+        homes and at home. This one-of-a-kind expert programming is available
+        effortlessly on any device."
+        image={ProductImage}
+        color="primary"
+        bubbleLeft
+        reverse
+      />
       <WellbeingHubBenefits />
       <ProductsDescription
-        title="Refresh your current programming"
-        description="Instantly activate a variety of on-demand Altra Wellbeing Hub classes
-          in all of your homes or communities."
+        title="Refresh current programming in your care home"
+        description="Altra’s Wellbeing Hub can grow and revitalize your activity programming giving you access to 100s of ideas and wellness videos at your fingertips."
         image={WellbeingImage1}
         color="violet"
         bubbleRight
@@ -38,15 +48,15 @@ const WellbeingHub = () => {
         />
       </ProductsDescription>
       <ProductsDescription
-        title="Educational workshops"
-        description="Drive participation while helping residents cope with their most salient health issues. We’re delivering today’s residents most sought after information."
+        title="Learn from the best"
+        description="Each video and resource has been created, produced and is led by internationally recognized active ageing experts to provide you a purposeful, results driven wellbeing tool."
         image={WellbeingImage2}
         color="red"
         reverse
       />
       <ProductsDescription
         title="Why do I need it?"
-        description="Because you can’t do it all. No one could. This is your tool to round out current offerings, provide the variety, the consistency, the EXPERT quality and results driven exercises classes and wellness resources that you desire! We’re here to help."
+        description="Because it is time consuming to continuously find new activity ideas and programming. This is your tool to round out current offerings, provide the variety, the consistency, the expert quality and results driven exercises classes and wellness resources that you desire! We’re here to help."
         image={WellbeingImage3}
         color="green"
         bubbleLeft

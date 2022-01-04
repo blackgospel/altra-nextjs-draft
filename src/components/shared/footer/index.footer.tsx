@@ -1,8 +1,7 @@
 import { IconArrowRight, IconBrandLinkedin, IconMail } from '@tabler/icons'
 import FlagIreland from 'assets/images/footer/irish-flag.png'
-import FlagUSA from 'assets/images/footer/usa-flag.png'
+import FlagUK from 'assets/images/footer/uk-flag.png'
 import Logo from 'assets/images/logo-color.png'
-import FooterData from 'data/footer.json'
 import SocialLinks from 'data/social-links.json'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -22,13 +21,16 @@ const Footer: React.FC = () => {
         <Spacing />
 
         <div className={styles.schedule_demo_wrapper}>
-          <div className={styles.content}>
-            <h3 className={styles.content}>{FooterData.demoTitle}</h3>
-            <p className={styles.content}>{FooterData.demoMission}</p>
-          </div>
+          <span>
+            <h3 className={styles.content}>See for yourself</h3>
+            <p className={styles.content}>
+              Our 20 min online demos give you a clear picture of how Altra can
+              improve your processes and save you time.
+            </p>
+          </span>
           <div className={styles.button_wrapper}>
             <Button href={SocialLinks.appLogin} lg>
-              {FooterData.demoButton}
+              Pick a time
               <IconArrowRight style={{ marginLeft: 6 }} />
             </Button>
           </div>
@@ -38,39 +40,30 @@ const Footer: React.FC = () => {
 
         <div className={styles.contact_us_wrapper}>
           <div className={styles.content}>
-            <h3 className={styles.content}>{FooterData.title}</h3>
-            <a
-              href={`tel:${FooterData.irelandNumber}`}
-              className={styles.link_wrapper}
-            >
+            <h3 className={styles.content}>Get in touch with us:</h3>
+            <a href={`tel:+353 83 463 9033`} className={styles.link_wrapper}>
               <div className={styles.icon}>
                 <Image src={FlagIreland} alt="Irish Flag" />
               </div>
-              {FooterData.irelandNumber}
+              +353 83 463 9033
             </a>
 
             <Spacing />
 
-            <a
-              href={`tel:${FooterData.usaNumber}`}
-              className={styles.link_wrapper}
-            >
+            <a href={`tel:+44 161 768 4984`} className={styles.link_wrapper}>
               <div className={styles.icon}>
-                <Image src={FlagUSA} alt="USA Flag" />
+                <Image src={FlagUK} alt="UK Flag" />
               </div>
-              {FooterData.usaNumber}
+              +44 161 768 4984
             </a>
 
             <Spacing />
 
-            <a
-              href={`mailto:${FooterData.email}`}
-              className={styles.link_wrapper}
-            >
+            <a href={`mailto:hello@altra.ie`} className={styles.link_wrapper}>
               <div className={styles.icon}>
                 <IconMail />
               </div>
-              {FooterData.email}
+              hello@altra.ie
             </a>
           </div>
         </div>
@@ -97,6 +90,12 @@ const Footer: React.FC = () => {
             <li className={styles.navbar_item}>
               <Link href={AppRoutes.CONTACT}>Contact</Link>
             </li>
+            <li className={styles.navbar_item}>
+              <Link href={AppRoutes.PRIVACY_POLICY}>Privacy Policy</Link>
+            </li>
+            <li className={styles.navbar_item}>
+              <Link href={AppRoutes.DATA_SECURITY}>Data Security</Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -104,11 +103,11 @@ const Footer: React.FC = () => {
       <Spacing />
 
       <div className={styles.copyright_wrapper}>
-        <p className={styles.copyright}>&copy; {FooterData.copyright}</p>
-        <Link href={FooterData.linkedInLink}>
+        <p className={styles.copyright}>&copy; 2021 Altra</p>
+        <Link href="https://www.linkedin.com/company/altra-ie/">
           <p className={styles.linked_in_text}>
             <IconBrandLinkedin style={{ marginRight: 6 }} />
-            {FooterData.linkedIn}
+            Connect with us on LinkedIn
           </p>
         </Link>
       </div>
